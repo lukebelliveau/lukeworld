@@ -205,7 +205,13 @@ export default function About() {
                 coding, you might find me snowboarding or noodling on my
                 beginner&apos;s keyboard or sky-pink Köves telecaster. I am
                 currently open to contract, part time and full time work. If you
-                think we may be a good fit, I&apos;d love to hear from you!
+                think we may be a good fit, I&apos;d love to{' '}
+                <Link
+                  href={'/contact'}
+                  className="underline underline-offset-4 hover:text-teal-500 dark:hover:text-teal-400"
+                >
+                  hear from you!
+                </Link>
               </p>
             </div>
           </div>
@@ -216,19 +222,20 @@ export default function About() {
                 icon={GitHubIcon}
                 className="mt-4"
               >
-                Follow on GitHub
+                GitHub
               </SocialLink>
               <SocialLink
                 href="https://www.linkedin.com/in/lukebelliveau/"
                 icon={LinkedInIcon}
                 className="mt-4"
               >
-                Follow on LinkedIn
+                LinkedIn
               </SocialLink>
               <SocialLink
                 href="mailto:hi@lukebelliveau.dev"
                 icon={MailIcon}
-                className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
+                className="mt-4"
+                // className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
                 hi@lukebelliveau.dev
               </SocialLink>
