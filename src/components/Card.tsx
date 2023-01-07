@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import clsx from 'clsx'
+import { PropsWithChildren } from 'react'
+import * as React from 'react'
 
 function ChevronRightIcon(props) {
   return (
@@ -14,7 +16,18 @@ function ChevronRightIcon(props) {
   )
 }
 
-export function Card({ as: Component = 'div', className, children }) {
+// interface CardType extends React.ReactElement {
+//   Eyebrow?: React.FC
+// }
+
+interface CardProps extends PropsWithChildren {
+  as?: React.ElementType
+  href?: string
+  className?: string
+  decorate?: boolean
+}
+
+export function Card({ as: Component, className = '', children }: CardProps) {
   return (
     <Component
       className={clsx(className, 'group relative flex flex-col items-start')}
@@ -36,7 +49,11 @@ Card.Link = function CardLink({ children, ...props }) {
   )
 }
 
-Card.Title = function CardTitle({ as: Component = 'h2', href, children }) {
+Card.Title = function CardTitle({
+  as: Component = 'h2',
+  href,
+  children,
+}: CardProps) {
   return (
     <Component className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
       {href ? <Card.Link href={href}>{children}</Card.Link> : children}
@@ -70,7 +87,7 @@ Card.Eyebrow = function CardEyebrow({
   className,
   children,
   ...props
-}) {
+}: CardProps) {
   return (
     <Component
       className={clsx(

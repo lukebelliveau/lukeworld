@@ -3,11 +3,11 @@ import Head from 'next/head'
 
 import { Card } from '../components/Card'
 import { SimpleLayout } from '../components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+// import logoAnimaginary from '@/images/logos/animaginary.svg'
+// import logoCosmos from '@/images/logos/cosmos.svg'
+// import logoHelioStream from '@/images/logos/helio-stream.svg'
+// import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
+// import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
@@ -15,35 +15,35 @@ const projects = [
     description:
       'Creating technology to empower civilians to explore space on their own terms.',
     link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+    logo: '/images/zuut.jpg',
   },
   {
     name: 'Animaginary',
     description:
       'High performance web animation library, hand-written in optimized WASM.',
     link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+    logo: '/images/zuut.jpg',
   },
   {
     name: 'HelioStream',
     description:
       'Real-time video streaming library, optimized for interstellar transmission.',
     link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
+    logo: '/images/zuut.jpg',
   },
   {
     name: 'cosmOS',
     description:
       'The operating system that powers our Planetaria space shuttles.',
     link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
+    logo: '/images/zuut.jpg',
   },
   {
     name: 'OpenShuttle',
     description:
       'The schematics for the first rocket I designed that successfully made it to orbit.',
     link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+    logo: '/images/zuut.jpg',
   },
 ]
 
@@ -62,15 +62,15 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects - Spencer Sharp</title>
+        <title>Projects - Luke Belliveau</title>
         <meta
           name="description"
-          content="Things I’ve made trying to put my dent in the universe."
+          content="Things I've built that I'm proud of"
         />
       </Head>
       <SimpleLayout
-        title="Things I’ve made trying to put my dent in the universe."
-        intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+        title="wanna see what I've got?"
+        intro="While much of my professional work is proprietary, internal tooling, I've been fortunate enough to work on a few things that are accessible to anybody with an internet connection. Here's a small sample of the stuff I've built as a consultant."
       >
         <ul
           role="list"

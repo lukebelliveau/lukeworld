@@ -8,28 +8,28 @@ import { Card } from '../components/Card'
 import { Container } from '../components/Container'
 import { GitHubIcon, LinkedInIcon, MailIcon } from '../components/SocialIcons'
 
-import reactLogo from '@/images/photos/react.png'
-import reduxLogo from '@/images/photos/redux.png'
-import gitLogo from '@/images/photos/git.png'
-import tsLogo from '@/images/photos/typescript.png'
-import jsLogo from '@/images/photos/javascript.png'
-import viteLogo from '@/images/photos/vite.png'
-import jestLogo from '@/images/photos/jest.svg'
-import nextLogo from '@/images/photos/next.png'
-import cypressLogo from '@/images/photos/cypress.jpg'
-import tailwindLogo from '@/images/photos/tailwind.svg'
-import jenkinsLogo from '@/images/photos/jenkins.png'
-import vercelLogo from '@/images/photos/vercel.png'
-import dockerLogo from '@/images/photos/docker.webp'
-import firebaseLogo from '@/images/photos/firebase.png'
+import reactLogo from '../images/photos/react.png'
+import reduxLogo from '../images/photos/redux.png'
+import gitLogo from '../images/photos/git.png'
+import tsLogo from '../images/photos/typescript.png'
+import jsLogo from '../images/photos/javascript.png'
+import viteLogo from '../images/photos/vite.png'
+import jestLogo from '../images/photos/jest.svg'
+import nextLogo from '../images/photos/next.png'
+import cypressLogo from '../images/photos/cypress.jpg'
+import tailwindLogo from '../images/photos/tailwind.svg'
+import jenkinsLogo from '../images/photos/jenkins.png'
+import vercelLogo from '../images/photos/vercel.png'
+import dockerLogo from '../images/photos/docker.webp'
+import firebaseLogo from '../images/photos/firebase.png'
 
-import zuutLogo from '@/images/photos/zuut.jpg'
-import nuwaveLogo from '@/images/photos/nuwave.jpg'
-import grubhubLogo from '@/images/photos/grbhb_symbol_red.png'
-import thoughtworksLogo from '@/images/photos/thoughtworks.jpg'
-import ibmLogo from '@/images/photos/ibm.png'
+import zuutLogo from '../images/photos/zuut.jpg'
+import nuwaveLogo from '../images/photos/nuwave.jpg'
+import grubhubLogo from '../images/photos/grbhb_symbol_red.png'
+import thoughtworksLogo from '../images/photos/thoughtworks.jpg'
+import ibmLogo from '../images/photos/ibm.png'
 
-import { formatDate } from '@/lib/formatDate'
+import { formatDate } from '../lib/formatDate'
 import next from 'next'
 
 function BriefcaseIcon(props) {
@@ -68,21 +68,6 @@ function ArrowDownIcon(props) {
   )
 }
 
-function Article({ article }) {
-  return (
-    <Card as="article">
-      <Card.Title href={`/articles/${article.slug}`}>
-        {article.title}
-      </Card.Title>
-      <Card.Eyebrow as="time" dateTime={article.date} decorate>
-        {formatDate(article.date)}
-      </Card.Eyebrow>
-      <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>Read article</Card.Cta>
-    </Card>
-  )
-}
-
 function SocialLink({ icon: Icon, ...props }) {
   return (
     <Link className="group -m-1 p-1" {...props} target="_blank">
@@ -98,20 +83,14 @@ function Resume() {
       title: 'Co-founder & CTO',
       logo: zuutLogo,
       start: '2021',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear(),
-      },
+      end: 'Present',
     },
     {
       company: 'NuWave Technologies',
       title: 'Consultant Software Engineer',
       logo: nuwaveLogo,
       start: '2021',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear(),
-      },
+      end: 'Present',
     },
     {
       company: 'Grubhub',
@@ -142,13 +121,13 @@ function Resume() {
               <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
-              <dt className="sr-only">Role</dt>
-              <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
-                {role.title}
-              </dd>
               <dt className="sr-only">Company</dt>
-              <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+              <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
                 {role.company}
+              </dd>
+              <dt className="sr-only">Role</dt>
+              <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+                {role.title}
               </dd>
               <dt className="sr-only">Date</dt>
               <dd
@@ -182,62 +161,62 @@ function Resume() {
   )
 }
 
-const toolList = [
-  {
-    image: cypressLogo,
-    label: 'Cypress',
-  },
-  {
-    image: dockerLogo,
-    label: 'Docker',
-  },
-  {
-    image: firebaseLogo,
-    label: 'Firebase',
-  },
-  {
-    image: jsLogo,
-    label: 'JavaScript',
-  },
-  {
-    image: jenkinsLogo,
-    label: 'Jenkins',
-  },
-  {
-    image: jestLogo,
-    label: 'Jest',
-  },
-  {
-    image: vercelLogo,
-    label: 'Next.js',
-  },
-  {
-    image: reactLogo,
-    label: 'React',
-  },
-  {
-    image: reduxLogo,
-    label: 'Redux',
-  },
-  {
-    image: tsLogo,
-    label: 'TypeScript',
-  },
-  {
-    image: tailwindLogo,
-    label: 'Tailwind',
-  },
-  {
-    image: viteLogo,
-    label: 'Vite',
-  },
-]
+// const toolList = [
+//   {
+//     image: cypressLogo,
+//     label: 'Cypress',
+//   },
+//   {
+//     image: dockerLogo,
+//     label: 'Docker',
+//   },
+//   {
+//     image: firebaseLogo,
+//     label: 'Firebase',
+//   },
+//   {
+//     image: jsLogo,
+//     label: 'JavaScript',
+//   },
+//   {
+//     image: jenkinsLogo,
+//     label: 'Jenkins',
+//   },
+//   {
+//     image: jestLogo,
+//     label: 'Jest',
+//   },
+//   {
+//     image: vercelLogo,
+//     label: 'Next.js',
+//   },
+//   {
+//     image: reactLogo,
+//     label: 'React',
+//   },
+//   {
+//     image: reduxLogo,
+//     label: 'Redux',
+//   },
+//   {
+//     image: tsLogo,
+//     label: 'TypeScript',
+//   },
+//   {
+//     image: tailwindLogo,
+//     label: 'Tailwind',
+//   },
+//   {
+//     image: viteLogo,
+//     label: 'Vite',
+//   },
+// ]
 
 function Tools() {
   return (
     <div className="mt-16 flex place-content-center justify-center sm:mt-20">
       <div className="xl:space-around grid grid-cols-4 gap-4 sm:gap-14 md:grid-cols-6 xl:flex xl:grid-cols-12 xl:justify-center xl:gap-4">
-        {toolList.map((tool, imageIndex) => (
+        {[].map((tool, imageIndex) => (
           <div
             key={tool.image.src}
             className="aspect-square w-16 flex-none rounded-xl rounded-2xl sm:w-20 xl:aspect-[12/9]"
