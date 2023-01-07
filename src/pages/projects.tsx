@@ -3,47 +3,31 @@ import Head from 'next/head'
 
 import { Card } from '../components/Card'
 import { SimpleLayout } from '../components/SimpleLayout'
-// import logoAnimaginary from '@/images/logos/animaginary.svg'
-// import logoCosmos from '@/images/logos/cosmos.svg'
-// import logoHelioStream from '@/images/logos/helio-stream.svg'
-// import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-// import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'ZUUT',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: '/images/zuut.jpg',
+      'Full-featured CAD tool for planning & executing cannabis grow operations. The canvas runs in the canvas using the Konva library, and the whole app runs on React/Redux backed by Firebase. Check out the builder to have some fun!',
+    link: { href: 'https://www.zuut.co', label: 'zuut.co' },
+    logo: '/images/logos/zuut.jpg',
   },
   {
-    name: 'Animaginary',
+    name: 'Selenium',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: '/images/zuut.jpg',
+      'Given a set of mockups, I delivered a speedy static website for Selenium, a popular browser automation tool. Built with Jekyll and Hugo - under time and budget.',
+    link: { href: 'https://www.selenium.dev', label: 'selenium.dev' },
+    logo: '/images/logos/selenium.png',
   },
   {
-    name: 'HelioStream',
+    name: 'Prizm API Gateway',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: '/images/zuut.jpg',
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: '/images/zuut.jpg',
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: '/images/zuut.jpg',
+      'A comprehensive API Gateway built to run on Nonstop servers. I handled the development for all front-end, test automation, and deployment code - from our inception in early 2021 to our successful launch in 2022.',
+    link: {
+      href: 'https://www.nuwavetech.com/prizm-gateway',
+      label: 'nuwavetech.com',
+    },
+    logo: '/images/logos/nuwave.jpg',
   },
 ]
 
@@ -77,19 +61,18 @@ export default function Projects() {
           className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
         >
           {projects.map((project) => (
-            <Card as="li" key={project.name}>
-              <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                <Image
-                  src={project.logo}
-                  alt=""
-                  className="h-8 w-8"
-                  unoptimized
-                />
+            <Card as="li" key={project.name} className="justify-between">
+              <div>
+                <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                  <Image src={project.logo} alt="" className="h-8 w-8" fill />
+                </div>
+                <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+                  <Card.Link href={project.link.href} target="_blank">
+                    {project.name}
+                  </Card.Link>
+                </h2>
+                <Card.Description>{project.description}</Card.Description>
               </div>
-              <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                <Card.Link href={project.link.href}>{project.name}</Card.Link>
-              </h2>
-              <Card.Description>{project.description}</Card.Description>
               <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
                 <LinkIcon className="h-6 w-6 flex-none" />
                 <span className="ml-2">{project.link.label}</span>
