@@ -103,8 +103,8 @@ export default function About() {
                 and enjoyed a five-star rating on the Google Play store.
               </p>
               <p>
-                I then went on to work on the Cloud Infrastructure team at
-                GrubHub in NYC.{' '}
+                I went on to work on the Cloud Infrastructure team at GrubHub in
+                NYC.{' '}
                 <Link
                   href={
                     'https://bytes.grubhub.com/cloud-infrastructure-at-grubhub-94db998a898a'
@@ -120,16 +120,16 @@ export default function About() {
                 on the Java frameworks & services that were consumed by our
                 application developers to build, test & deploy their
                 applications. I also had the opportunity to build out GUIs for
-                our Site Reliabililty Engineers to use in times of crisis - in
-                times of crisis, the last we needed is a fat-fingered or
-                mistaken command line entry! I also completed a successful
-                proposal for a new notifications platform. This was to
-                facilitate notification management across all mediums at Grubhub
-                and involved architecture designs with a Java backend +
-                TypeScript frontend, backed by a Cassandra database. After
-                putting together the architecture diagrams and DB schemas, my
-                design was approved our organization-wide review council of
-                engineers! We began work on it the next week.
+                our Site Reliabililty Engineers to expose simple network
+                controls and insights for use in outages and other times of
+                crisis. I also completed a successful proposal for a new
+                notifications platform. This was to facilitate notification
+                management across push/SMS/email at Grubhub and involved
+                architecture designs with a Java backend + TypeScript frontend,
+                backed by a Cassandra database. Following a review process of
+                the architecture plans and DB schemas, my design was approved by
+                our org-wide architecture review council, and we began work on
+                it the next week.
               </p>
               <p>
                 In January 2020, I took stock of my 4-year career and decided to
