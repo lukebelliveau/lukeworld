@@ -133,18 +133,18 @@ export default function About() {
               </p>
               <p>
                 In January 2020, I took stock of my 4-year career and decided to
-                take a sabbatical. I wrapped up at Grubhub and left to go
-                backpacking around Europe, blissfully unaware of how the year
+                take a sabbatical. After wrapping up at Grubhub, I embarked to
+                go backpacking around Europe, blissfully unaware of how the year
                 would unfold! I spent a few months volunteering at a hostel in
-                Hungary until the pandemic happened and the world shut down. I
-                spent the year hunkered down in Budapest, taking on shorter term
-                software contracts to pay rent as I waited for our hostel to
-                open back up - an event that unfortunately never came to
-                fruition. Not quite the year I planned for, but I did manage to
-                fall in love with a new city! As we sat inside all year, I took
-                on some shorter term software contracts to pay the rent. Among
-                these was a stint with the Software Freedom Conservancy, for
-                whom I rebuilt the website for{' '}
+                Hungary until the pandemic happened and the world shut down.
+                Hunkered down in Budapest, I took on shorter term software
+                contracts to pay rent as we waited for our hostel to open back
+                up - an event that unfortunately never came to fruition. Not
+                quite the year I planned for, but I did manage to fall in love
+                with a new city! As we sat inside all year, I took on some
+                shorter term software contracts to pay the rent. Among these was
+                a stint with the Software Freedom Conservancy, for whom I
+                rebuilt the website for{' '}
                 <Link
                   href={'https://www.selenium.dev/'}
                   className="underline underline-offset-4 hover:text-teal-500 dark:hover:text-teal-400"
