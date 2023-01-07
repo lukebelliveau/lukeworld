@@ -59,7 +59,7 @@ export default function About() {
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p className="italic">
-                If you&apos;re looking for a highlight reel of my skills as a
+                If you&apos;re looking for a showcase of my skills as a
                 developer, check out{' '}
                 <Link
                   href={'https://www.zuut.co'}
