@@ -122,14 +122,14 @@ export default function About() {
                 applications. I also had the opportunity to build out GUIs for
                 our Site Reliabililty Engineers to expose simple network
                 controls and insights for use in outages and other times of
-                crisis. I also completed a successful proposal for a new
-                notifications platform. This was to facilitate notification
-                management across push/SMS/email at Grubhub and involved
-                architecture designs with a Java backend + TypeScript frontend,
-                backed by a Cassandra database. Following a review process of
-                the architecture plans and DB schemas, my design was approved by
-                our org-wide architecture review council, and we began work on
-                it the next week.
+                crisis. In my last major project, I completed the research &
+                architecture proposal for a new notifications platform. This was
+                to facilitate notification management across push/SMS/email at
+                Grubhub, and involved architecture designs with a Java backend +
+                TypeScript frontend + Cassandra database. Following a review
+                process of the architecture plans and DB schemas, my design was
+                approved by our org-wide architecture review council, and we
+                began work on it the next week.
               </p>
               <p>
                 In January 2020, I took stock of my 4-year career and decided to
