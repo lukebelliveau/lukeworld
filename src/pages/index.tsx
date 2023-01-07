@@ -8,26 +8,26 @@ import { Card } from '../components/Card'
 import { Container } from '../components/Container'
 import { GitHubIcon, LinkedInIcon, MailIcon } from '../components/SocialIcons'
 
-import reactLogo from '../images/photos/react.png'
-import reduxLogo from '../images/photos/redux.png'
-import gitLogo from '../images/photos/git.png'
-import tsLogo from '../images/photos/typescript.png'
-import jsLogo from '../images/photos/javascript.png'
-import viteLogo from '../images/photos/vite.png'
-import jestLogo from '../images/photos/jest.svg'
-import nextLogo from '../images/photos/next.png'
-import cypressLogo from '../images/photos/cypress.jpg'
-import tailwindLogo from '../images/photos/tailwind.svg'
-import jenkinsLogo from '../images/photos/jenkins.png'
-import vercelLogo from '../images/photos/vercel.png'
-import dockerLogo from '../images/photos/docker.webp'
-import firebaseLogo from '../images/photos/firebase.png'
+// import reactLogo from '../images/photos/react.png'
+// import reduxLogo from '../images/photos/redux.png'
+// import gitLogo from '../images/photos/git.png'
+// import tsLogo from '../images/photos/typescript.png'
+// import jsLogo from '../images/photos/javascript.png'
+// import viteLogo from '../images/photos/vite.png'
+// import jestLogo from '../images/photos/jest.svg'
+// import nextLogo from '../images/photos/next.png'
+// import cypressLogo from '../images/photos/cypress.jpg'
+// import tailwindLogo from '../images/photos/tailwind.svg'
+// import jenkinsLogo from '../images/photos/jenkins.png'
+// import vercelLogo from '../images/photos/vercel.png'
+// import dockerLogo from '../images/photos/docker.webp'
+// import firebaseLogo from '../images/photos/firebase.png'
 
-import zuutLogo from '../images/photos/zuut.jpg'
-import nuwaveLogo from '../images/photos/nuwave.jpg'
-import grubhubLogo from '../images/photos/grbhb_symbol_red.png'
-import thoughtworksLogo from '../images/photos/thoughtworks.jpg'
-import ibmLogo from '../images/photos/ibm.png'
+// import zuutLogo from '../images/photos/zuut.jpg'
+// import nuwaveLogo from '../images/photos/nuwave.jpg'
+// import grubhubLogo from '../images/photos/grbhb_symbol_red.png'
+// import thoughtworksLogo from '../images/photos/thoughtworks.jpg'
+// import ibmLogo from '../images/photos/ibm.png'
 
 import { formatDate } from '../lib/formatDate'
 import next from 'next'
@@ -81,28 +81,28 @@ function Resume() {
     {
       company: 'ZUUT.co',
       title: 'Co-founder & CTO',
-      logo: zuutLogo,
+      logo: '/images/logos/zuut.jpg',
       start: '2021',
       end: 'Present',
     },
     {
       company: 'NuWave Technologies',
       title: 'Consultant Software Engineer',
-      logo: nuwaveLogo,
+      logo: '/images/logos/nuwave.jpg',
       start: '2021',
       end: 'Present',
     },
     {
       company: 'Grubhub',
       title: 'Senior Cloud Infra Engineer',
-      logo: grubhubLogo,
+      logo: '/images/logos/grbhb_symbol_red.png',
       start: '2018',
       end: '2020',
     },
     {
       company: 'ThoughtWorks',
       title: 'Software Engineer',
-      logo: thoughtworksLogo,
+      logo: '/images/logos/thoughtworks.jpg',
       start: '2016',
       end: '2018',
     },
@@ -118,7 +118,7 @@ function Resume() {
         {resume.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
             <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+              <Image src={role.logo} alt="" className="h-7 w-7" fill />
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
               <dt className="sr-only">Company</dt>
@@ -132,17 +132,11 @@ function Resume() {
               <dt className="sr-only">Date</dt>
               <dd
                 className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-                aria-label={`${role.start.label ?? role.start} until ${
-                  role.end.label ?? role.end
-                }`}
+                aria-label={`${role.start} until ${role.end}`}
               >
-                <time dateTime={role.start.dateTime ?? role.start}>
-                  {role.start.label ?? role.start}
-                </time>{' '}
+                <time dateTime={role.start}>{role.start}</time>{' '}
                 <span aria-hidden="true">—</span>{' '}
-                <time dateTime={role.end.dateTime ?? role.end}>
-                  {role.end.label ?? role.end}
-                </time>
+                <time dateTime={role.end}>{role.end}</time>
               </dd>
             </dl>
           </li>
@@ -161,64 +155,64 @@ function Resume() {
   )
 }
 
-// const toolList = [
-//   {
-//     image: cypressLogo,
-//     label: 'Cypress',
-//   },
-//   {
-//     image: dockerLogo,
-//     label: 'Docker',
-//   },
-//   {
-//     image: firebaseLogo,
-//     label: 'Firebase',
-//   },
-//   {
-//     image: jsLogo,
-//     label: 'JavaScript',
-//   },
-//   {
-//     image: jenkinsLogo,
-//     label: 'Jenkins',
-//   },
-//   {
-//     image: jestLogo,
-//     label: 'Jest',
-//   },
-//   {
-//     image: vercelLogo,
-//     label: 'Next.js',
-//   },
-//   {
-//     image: reactLogo,
-//     label: 'React',
-//   },
-//   {
-//     image: reduxLogo,
-//     label: 'Redux',
-//   },
-//   {
-//     image: tsLogo,
-//     label: 'TypeScript',
-//   },
-//   {
-//     image: tailwindLogo,
-//     label: 'Tailwind',
-//   },
-//   {
-//     image: viteLogo,
-//     label: 'Vite',
-//   },
-// ]
+const toolList = [
+  {
+    image: '/images/logos/cypress.jpg',
+    label: 'Cypress',
+  },
+  {
+    image: '/images/logos/docker.webp',
+    label: 'Docker',
+  },
+  {
+    image: '/images/logos/firebase.png',
+    label: 'Firebase',
+  },
+  {
+    image: '/images/logos/javascript.png',
+    label: 'JavaScript',
+  },
+  {
+    image: '/images/logos/jenkins.png',
+    label: 'Jenkins',
+  },
+  {
+    image: '/images/logos/jest.svg',
+    label: 'Jest',
+  },
+  {
+    image: '/images/logos/vercel.png',
+    label: 'Next.js',
+  },
+  {
+    image: '/images/logos/react.png',
+    label: 'React',
+  },
+  {
+    image: '/images/logos/redux.png',
+    label: 'Redux',
+  },
+  {
+    image: '/images/logos/typescript.png',
+    label: 'TypeScript',
+  },
+  {
+    image: '/images/logos/tailwind.svg',
+    label: 'Tailwind',
+  },
+  {
+    image: '/images/logos/vite.png',
+    label: 'Vite',
+  },
+]
 
 function Tools() {
   return (
     <div className="mt-16 flex place-content-center justify-center sm:mt-20">
       <div className="xl:space-around grid grid-cols-4 gap-4 sm:gap-14 md:grid-cols-6 xl:flex xl:grid-cols-12 xl:justify-center xl:gap-4">
-        {[].map((tool, imageIndex) => (
+        {toolList.map((tool, imageIndex) => (
           <div
-            key={tool.image.src}
+            key={tool.image}
             className="aspect-square w-16 flex-none rounded-xl rounded-2xl sm:w-20 xl:aspect-[12/9]"
           >
             <div className="relative inset-0 flex h-full w-full place-content-center">
@@ -227,6 +221,7 @@ function Tools() {
                 alt=""
                 sizes="(min-width: 640px) 18rem, 11rem"
                 className="max-w-auto max-h-21 rounded-2xl"
+                fill
               />
             </div>
             <div className="relative flex w-full place-content-center">
