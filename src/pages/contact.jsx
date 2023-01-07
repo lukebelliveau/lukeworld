@@ -36,7 +36,7 @@ export default function Contact() {
           content="I’m Luke Belliveau. Let's build something together."
         />
       </Head>
-      <Container className="mt-16 sm:mt-32">
+      <Container className="mt-16 sm:mt-20">
         <div className="relative bg-white dark:bg-inherit">
           <div className="lg:absolute lg:inset-0">
             <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
