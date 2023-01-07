@@ -3,15 +3,15 @@ import Head from 'next/head'
 import Link from 'next/link'
 import clsx from 'clsx'
 
-import { MailIcon } from '@/components/SocialIcons'
+import { MailIcon } from '../components/SocialIcons'
 
-import { Container } from '@/components/Container'
+import { Container } from '../components/Container'
 import {
   TwitterIcon,
   InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
-} from '@/components/SocialIcons'
+} from '../components/SocialIcons'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (

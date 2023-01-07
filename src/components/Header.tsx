@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 
-import { Container } from '@/components/Container'
+import { Container } from './Container'
 import { Fragment, useEffect, useRef } from 'react'
 
 function CloseIcon(props) {
@@ -206,7 +206,7 @@ function clamp(number, a, b) {
   return Math.min(Math.max(number, min), max)
 }
 
-function AvatarContainer({ className, ...props }) {
+function AvatarContainer({ className = '', ...props }) {
   return (
     <div
       className={clsx(
@@ -218,7 +218,7 @@ function AvatarContainer({ className, ...props }) {
   )
 }
 
-function Avatar({ large = false, className, ...props }) {
+function Avatar({ large = false, className = '', ...props }) {
   return (
     <Link
       href="/"
@@ -246,8 +246,8 @@ function Avatar({ large = false, className, ...props }) {
 export function Header() {
   let isHomePage = useRouter().pathname === '/'
 
-  let headerRef = useRef()
-  let avatarRef = useRef()
+  let headerRef = useRef<HTMLDivElement>()
+  let avatarRef = useRef<HTMLDivElement>()
   let isInitial = useRef(true)
 
   useEffect(() => {
@@ -341,7 +341,7 @@ export function Header() {
     window.addEventListener('resize', updateStyles)
 
     return () => {
-      window.removeEventListener('scroll', updateStyles, { passive: true })
+      window.removeEventListener('scroll', updateStyles)
       window.removeEventListener('resize', updateStyles)
     }
   }, [isHomePage])
@@ -367,7 +367,7 @@ export function Header() {
             >
               <div
                 className="top-[var(--avatar-top,theme(spacing.3))] w-full"
-                style={{ position: 'var(--header-inner-position)' }}
+                style={{ position: 'var(--header-inner-position)' } as unknown}
               >
                 <div className="relative">
                   <AvatarContainer
@@ -390,7 +390,7 @@ export function Header() {
         <div
           ref={headerRef}
           className="top-0 z-10 h-16 pt-6"
-          style={{ position: 'var(--header-position)' }}
+          style={{ position: 'var(--header-position)' } as unknown}
         >
           <Container
             className="top-[var(--header-top,theme(spacing.6))] w-full"

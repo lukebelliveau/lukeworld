@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Container } from '@/components/Container'
+import { Container } from '../components/Container'
 import { useFormspark } from '@formspark/use-formspark'
 import { useForm } from 'react-hook-form'
 import toast, { Toaster } from 'react-hot-toast'
