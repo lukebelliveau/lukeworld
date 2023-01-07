@@ -69,7 +69,7 @@ function Resume({ className }: { className?: string }) {
     },
     {
       company: 'Grubhub',
-      title: 'Senior Cloud Infra Engineer',
+      title: 'Senior Cloud Infrastructure Engineer',
       logo: '/images/logos/grbhb_symbol_red.png',
       start: '2018',
       end: '2020',
