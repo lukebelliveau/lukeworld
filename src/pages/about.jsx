@@ -182,18 +182,18 @@ export default function About() {
                 </Link>
                 , a computer-aided design tool that assists people in planning
                 out and executing their cannabis grows. This one&apos;s a doozy,
-                and is a solid showcase of what I like to do. ZUUT features an
-                deeply interactive drag-and-drop design tool, with sync, save
-                and share features modeled after Google Docs. Users are assisted
-                by a complex interaction and collision detection engine, which
+                and is a solid showcase of what I can do. ZUUT features an
+                deeply interactive drag-and-drop design tool with sync, save and
+                share features modeled after Google Docs. Users are assisted by
+                a deep interaction and collision detection engine, which
                 provides immediate feedback on the current state of the
                 user&apos;s work. The tool runs entirely in the browser and was
                 built with React, Redux, Next.js, and Firebase - with support
-                from Airtable and Contentful. Here I am especially proud of the
+                from Airtable and Contentful. I am especially proud of the
                 smooth Builder interface, convenient auto-saving/sharing
                 features, and an optimized build/deploy strategy that keeps
-                first loads and JS bundles light, (and Lighthouse scores high!)
-                despite the heavy nature of the application.
+                first paints and JS bundles light, (+ Lighthouse scores high!)
+                despite the rich feature set of the full application.
               </p>
               <p>
                 I currently live in Budapest, and split time between here and
