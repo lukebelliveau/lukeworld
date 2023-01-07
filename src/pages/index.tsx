@@ -267,7 +267,7 @@ export default function Home() {
             </p>
             <p className="mt-6 text-base  text-zinc-600 dark:text-zinc-400">
               That means working with product teams to break ground on new
-              things, pairing with engineers to solve complex architecture
+              Things, pairing with engineers to solve complex architecture
               problems, and everything in-between.
             </p>
             <p className="mt-6 text-base  text-zinc-600 dark:text-zinc-400">
