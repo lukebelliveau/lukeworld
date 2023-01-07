@@ -261,14 +261,14 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            let&apos;s make stuff.
+            Software designer, founder, and amateur astronaut.
           </h1>
 
           <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://github.com/lukebelliveau"
               aria-label="Follow on GitHub"
-              icon={GitHubIcon}
+              icon={GithubIcon}
             />
           </div>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
