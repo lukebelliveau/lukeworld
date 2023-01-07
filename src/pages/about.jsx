@@ -12,7 +12,6 @@ import {
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.png'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -48,7 +47,7 @@ export default function About() {
                 src={'/images/portrait.png'}
                 alt="A portrait of Luke drinking a smoothie with a cat."
                 sizes="(min-width: 1024px) 32rem, 20rem"
-                className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800 lg:aspect-auto"
+                className="aspect-square rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800 lg:aspect-auto lg:rotate-3"
                 height="600"
                 width="400"
               />

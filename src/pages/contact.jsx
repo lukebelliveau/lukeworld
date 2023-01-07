@@ -1,17 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Container } from '@/components/Container'
-import profileImage from '@/images/profile.jpeg'
-import icelandImage from '@/images/iceland.jpeg'
 import { useFormspark } from '@formspark/use-formspark'
 import { useForm } from 'react-hook-form'
 import toast, { Toaster } from 'react-hot-toast'
-
-const initialFormState = {
-  firstName: '',
-  lastName: '',
-  email: '',
-}
 
 const showToast = () =>
   toast(`Thanks for the shout, I'll get back to you soon!`)
@@ -28,8 +20,6 @@ export default function Contact() {
   const [submit, submitting] = useFormspark({
     formId: 'ow7HV4J2',
   })
-
-  // const [message, setMessage] = useState('')
 
   const onSubmit = async (data) => {
     console.log('data', data)
@@ -52,24 +42,23 @@ export default function Contact() {
           <div className="lg:absolute lg:inset-0">
             <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
               <Image
-                className="h-56 w-full object-cover lg:absolute lg:h-full"
+                className="h-56 w-full rounded-2xl object-cover lg:absolute lg:h-full "
                 src={'/images/iceland.jpeg'}
                 alt=""
                 fill
               />
             </div>
           </div>
-          <div className="relative bg-black/[.70] py-1 px-6 sm:py-24 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:bg-transparent lg:px-8 lg:py-8">
+          <div className="relative rounded-2xl bg-black/[.70] py-1 px-6 sm:py-24 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:bg-transparent lg:px-8 lg:py-8">
             <div className="lg:pr-8">
               <div className="mx-auto max-w-md py-3 sm:max-w-lg lg:mx-0">
                 <h2 className="text-3xl font-bold tracking-tight text-zinc-100 dark:text-zinc-100 sm:text-4xl lg:text-inherit">
                   let&apos;s work together
                 </h2>
                 <p className="mt-4 text-lg text-zinc-200 dark:text-zinc-200 sm:mt-3 lg:text-inherit">
-                  I&apos;m currently open to contract work, and I&apos;m open to
-                  part and full-time roles if we have a good fit. I would love
-                  to hear about your software delivery needs. Shoot me a
-                  message!
+                  I&apos;m currently accepting contract work, and open to part
+                  and full-time roles if we have a good fit. I would love to
+                  hear about your software delivery needs. Shoot me a message!
                 </p>
                 <form
                   onSubmit={handleSubmit(onSubmit)}

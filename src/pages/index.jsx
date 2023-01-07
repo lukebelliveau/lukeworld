@@ -133,7 +133,7 @@ function Resume() {
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Work</span>
+        <span className="ml-3">History</span>
       </h2>
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
@@ -184,37 +184,32 @@ function Resume() {
 
 const toolList = [
   {
-    image: vercelLogo,
-    label: 'Next.js \\\\ Vercel',
+    image: cypressLogo,
+    label: 'Cypress',
   },
   {
     image: dockerLogo,
     label: 'Docker',
-  },
-
-  {
-    image: tsLogo,
-    label: 'TypeScript',
-  },
-  {
-    image: jsLogo,
-    label: 'JavaScript',
-  },
-  {
-    image: viteLogo,
-    label: 'Vite',
   },
   {
     image: firebaseLogo,
     label: 'Firebase',
   },
   {
-    image: tailwindLogo,
-    label: 'Tailwind CSS \\\\ UI',
+    image: jsLogo,
+    label: 'JavaScript',
   },
   {
     image: jenkinsLogo,
     label: 'Jenkins',
+  },
+  {
+    image: jestLogo,
+    label: 'Jest',
+  },
+  {
+    image: vercelLogo,
+    label: 'Next.js',
   },
   {
     image: reactLogo,
@@ -225,30 +220,34 @@ const toolList = [
     label: 'Redux',
   },
   {
-    image: jestLogo,
-    label: 'Jest',
+    image: tsLogo,
+    label: 'TypeScript',
   },
   {
-    image: cypressLogo,
-    label: 'Cypress',
+    image: tailwindLogo,
+    label: 'Tailwind',
+  },
+  {
+    image: viteLogo,
+    label: 'Vite',
   },
 ]
 
 function Tools() {
   return (
-    <div className="mt-16 flex place-content-center sm:mt-20">
-      <div className="grid grid-cols-4 gap-10 md:grid-cols-4 2xl:grid-cols-6">
+    <div className="mt-16 flex place-content-center justify-center sm:mt-20">
+      <div className="xl:space-around grid grid-cols-4 gap-4 sm:gap-14 md:grid-cols-6 xl:flex xl:grid-cols-12 xl:justify-center xl:gap-4">
         {toolList.map((tool, imageIndex) => (
           <div
             key={tool.image.src}
-            className="aspect-square w-16 flex-none rounded-xl sm:w-40 sm:rounded-2xl"
+            className="aspect-square w-16 flex-none rounded-xl rounded-2xl sm:w-20 xl:aspect-[12/9]"
           >
             <div className="relative inset-0 flex h-full w-full place-content-center">
               <Image
                 src={tool.image}
                 alt=""
                 sizes="(min-width: 640px) 18rem, 11rem"
-                className="max-w-auto  max-h-21"
+                className="max-w-auto max-h-21 rounded-2xl"
               />
             </div>
             <div className="relative flex w-full place-content-center">
@@ -299,8 +298,8 @@ export default function Home() {
             />
           </div>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Hi! I&apos;m Luke. I am a full stack software engineer currently
-            serving as a software delivery consultant.
+            Hi! I&apos;m Luke. I am a full stack software engineer serving as a
+            software delivery consultant.
           </p>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             With 7 years of experience writing code up and down the stack,
@@ -308,23 +307,28 @@ export default function Home() {
             consultant.
           </p>
           <p className="mt-6 text-base font-bold text-zinc-600 dark:text-zinc-400">
-            I enable entrepreneurs & software teams to achieve their goals in
-            designing and delivering software.
+            I enable software teams and entrepreneurs to meet their goals in
+            designing, delivering, and maintaining software.
+          </p>
+          <p className="mt-6 text-base  text-zinc-600 dark:text-zinc-400">
+            That means working with product teams to break ground on new things,
+            pairing with engineers to solve complex architecture problems, and
+            everything in-between.
           </p>
           <p className="mt-6 text-base  text-zinc-600 dark:text-zinc-400">
             Most recently, my focus has been on building web applications with
-            complex UI requirements. I&apos;ve enjoyed handling the full
-            development cycle of applications, from pre-inception all the way
-            past launch. Although I have lots of experience picking up different
-            technologies and codebases, everybody has their favorite tools. Here
-            are some of my favorites:
+            unique and challenging UI requirements. I&apos;ve enjoyed handling
+            the full development cycle of applications, from pre-inception all
+            the way past launch. Although I have lots of experience picking up
+            different technologies and codebases, we all have our favorite
+            tools. Here are some of mine:
           </p>
         </div>
         <Tools />
       </Container>
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto flex flex max-w-xl place-content-center gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="space-y-10 lg:pl-16 xl:pl-24">
+          <div className="space-y-10">
             <Resume />
           </div>
         </div>
