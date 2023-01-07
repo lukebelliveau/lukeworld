@@ -23,6 +23,12 @@ import vercelLogo from '@/images/photos/vercel.png'
 import dockerLogo from '@/images/photos/docker.webp'
 import firebaseLogo from '@/images/photos/firebase.png'
 
+import zuutLogo from '@/images/photos/zuut.jpg'
+import nuwaveLogo from '@/images/photos/nuwave.jpg'
+import grubhubLogo from '@/images/photos/grbhb_symbol_red.png'
+import thoughtworksLogo from '@/images/photos/thoughtworks.jpg'
+import ibmLogo from '@/images/photos/ibm.png'
+
 import { formatDate } from '@/lib/formatDate'
 import next from 'next'
 
@@ -88,35 +94,38 @@ function SocialLink({ icon: Icon, ...props }) {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: reduxLogo,
-      start: '2019',
+      company: 'ZUUT.co',
+      title: 'Co-founder & CTO',
+      logo: zuutLogo,
+      start: '2021',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: reduxLogo,
-      start: '2014',
-      end: '2019',
+      company: 'NuWave Technologies',
+      title: 'Software Engineer Consultant',
+      logo: nuwaveLogo,
+      start: '2021',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear(),
+      },
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: reduxLogo,
-      start: '2011',
-      end: '2014',
+      company: 'Grubhub',
+      title: 'Senior Cloud Infra Engineer',
+      logo: grubhubLogo,
+      start: '2018',
+      end: '2020',
     },
     {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: reduxLogo,
-      start: '2008',
-      end: '2011',
+      company: 'ThoughtWorks',
+      title: 'Senior Software Engineer',
+      logo: thoughtworksLogo,
+      start: '2016',
+      end: '2018',
     },
   ]
 
@@ -223,14 +232,10 @@ const toolList = [
 function Tools() {
   return (
     <div className="mt-16 flex place-content-center sm:mt-20">
-      {/* <div className="-mt-4 grid grid-cols-3 justify-center gap-10 overflow-hidden overflow-scroll pt-4 pb-8 sm:gap-4"> */}
       <div className="grid grid-cols-4 gap-10 md:grid-cols-4 2xl:grid-cols-6">
         {toolList.map((tool, imageIndex) => (
           <div
             key={tool.image.src}
-            // className={clsx(
-            //   'relative aspect-square w-6 flex-none rounded-xl sm:w-20 sm:rounded-2xl'
-            // )}
             className="aspect-square w-16 flex-none rounded-xl sm:w-40 sm:rounded-2xl"
           >
             <div className="relative inset-0 flex h-full w-full place-content-center">
@@ -312,17 +317,3 @@ export default function Home() {
     </>
   )
 }
-
-// export async function getStaticProps() {
-//   if (process.env.NODE_ENV === 'production') {
-//     await generateRssFeed()
-//   }
-
-//   return {
-//     props: {
-//       articles: (await getAllArticles())
-//         .slice(0, 4)
-//         .map(({ component, ...meta }) => meta),
-//     },
-//   }
-// }
