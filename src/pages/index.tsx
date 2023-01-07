@@ -4,33 +4,8 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Button } from '../components/Button'
-import { Card } from '../components/Card'
 import { Container } from '../components/Container'
 import { GitHubIcon, LinkedInIcon, MailIcon } from '../components/SocialIcons'
-
-// import reactLogo from '../images/photos/react.png'
-// import reduxLogo from '../images/photos/redux.png'
-// import gitLogo from '../images/photos/git.png'
-// import tsLogo from '../images/photos/typescript.png'
-// import jsLogo from '../images/photos/javascript.png'
-// import viteLogo from '../images/photos/vite.png'
-// import jestLogo from '../images/photos/jest.svg'
-// import nextLogo from '../images/photos/next.png'
-// import cypressLogo from '../images/photos/cypress.jpg'
-// import tailwindLogo from '../images/photos/tailwind.svg'
-// import jenkinsLogo from '../images/photos/jenkins.png'
-// import vercelLogo from '../images/photos/vercel.png'
-// import dockerLogo from '../images/photos/docker.webp'
-// import firebaseLogo from '../images/photos/firebase.png'
-
-// import zuutLogo from '../images/photos/zuut.jpg'
-// import nuwaveLogo from '../images/photos/nuwave.jpg'
-// import grubhubLogo from '../images/photos/grbhb_symbol_red.png'
-// import thoughtworksLogo from '../images/photos/thoughtworks.jpg'
-// import ibmLogo from '../images/photos/ibm.png'
-
-import { formatDate } from '../lib/formatDate'
-import next from 'next'
 
 function BriefcaseIcon(props) {
   return (
@@ -76,7 +51,7 @@ function SocialLink({ icon: Icon, ...props }) {
   )
 }
 
-function Resume() {
+function Resume({ className }: { className?: string }) {
   let resume = [
     {
       company: 'ZUUT.co',
@@ -109,7 +84,12 @@ function Resume() {
   ]
 
   return (
-    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+    <div
+      className={clsx(
+        className,
+        'flex-initial rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40'
+      )}
+    >
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">History</span>
@@ -121,13 +101,13 @@ function Resume() {
               <Image src={role.logo} alt="" className="h-7 w-7" fill />
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
-              <dt className="sr-only">Company</dt>
-              <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
-                {role.company}
-              </dd>
               <dt className="sr-only">Role</dt>
-              <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+              <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
                 {role.title}
+              </dd>
+              <dt className="sr-only">Company</dt>
+              <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+                {role.company}
               </dd>
               <dt className="sr-only">Date</dt>
               <dd
@@ -249,61 +229,66 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container className="flex-column mt-9 flex">
-        <div className="place-content-center">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            let&apos;s make stuff.
-          </h1>
+        <div className="flex">
+          <div className="w-full lg:w-4/5">
+            <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+              let&apos;s make stuff.
+            </h1>
 
-          <div className="mt-6 flex gap-6">
-            <SocialLink
-              href="https://github.com/lukebelliveau"
-              aria-label="Follow on GitHub"
-              icon={GitHubIcon}
-            />
-            <SocialLink
-              href="https://www.linkedin.com/in/lukebelliveau/"
-              aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
-            />
-            <SocialLink
-              href="mailto:hi@lukebelliveau.dev"
-              aria-label="Email hi@lukebelliveau.dev"
-              icon={MailIcon}
-            />
+            <div className="mt-6 flex gap-6">
+              <SocialLink
+                href="https://github.com/lukebelliveau"
+                aria-label="Follow on GitHub"
+                icon={GitHubIcon}
+              />
+              <SocialLink
+                href="https://www.linkedin.com/in/lukebelliveau/"
+                aria-label="Follow on LinkedIn"
+                icon={LinkedInIcon}
+              />
+              <SocialLink
+                href="mailto:hi@lukebelliveau.dev"
+                aria-label="Email hi@lukebelliveau.dev"
+                icon={MailIcon}
+              />
+            </div>
+            <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+              Hi! I&apos;m Luke. I am a full stack software engineer serving as
+              a software delivery consultant.
+            </p>
+            <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+              With 7 years of experience writing code up and down the stack,
+              I&apos;ve spent the last couple of years working as an independent
+              consultant.
+            </p>
+            <p className="mt-6 text-base font-bold text-zinc-600 dark:text-zinc-400">
+              I enable software teams and entrepreneurs to meet their goals in
+              designing, delivering, and maintaining software.
+            </p>
+            <p className="mt-6 text-base  text-zinc-600 dark:text-zinc-400">
+              That means working with product teams to break ground on new
+              things, pairing with engineers to solve complex architecture
+              problems, and everything in-between.
+            </p>
+            <p className="mt-6 text-base  text-zinc-600 dark:text-zinc-400">
+              Most recently, my focus has been on building web applications with
+              unique and challenging UI requirements. I&apos;ve enjoyed handling
+              the full development cycle of applications, from pre-inception all
+              the way past launch. Although I have lots of experience picking up
+              different technologies and codebases, we all have our favorite
+              tools. Here are some of mine:
+            </p>
           </div>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Hi! I&apos;m Luke. I am a full stack software engineer serving as a
-            software delivery consultant.
-          </p>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            With 7 years of experience writing code up and down the stack,
-            I&apos;ve spent the last couple of years working as an independent
-            consultant.
-          </p>
-          <p className="mt-6 text-base font-bold text-zinc-600 dark:text-zinc-400">
-            I enable software teams and entrepreneurs to meet their goals in
-            designing, delivering, and maintaining software.
-          </p>
-          <p className="mt-6 text-base  text-zinc-600 dark:text-zinc-400">
-            That means working with product teams to break ground on new things,
-            pairing with engineers to solve complex architecture problems, and
-            everything in-between.
-          </p>
-          <p className="mt-6 text-base  text-zinc-600 dark:text-zinc-400">
-            Most recently, my focus has been on building web applications with
-            unique and challenging UI requirements. I&apos;ve enjoyed handling
-            the full development cycle of applications, from pre-inception all
-            the way past launch. Although I have lots of experience picking up
-            different technologies and codebases, we all have our favorite
-            tools. Here are some of mine:
-          </p>
+          <div className="flex flex-col place-content-center">
+            <Resume className="ml-4 hidden lg:block" />
+          </div>
         </div>
         <Tools />
       </Container>
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto flex flex max-w-xl place-content-center gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="space-y-10">
-            <Resume />
+            <Resume className="lg:hidden" />
           </div>
         </div>
       </Container>
