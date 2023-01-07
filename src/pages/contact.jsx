@@ -53,7 +53,7 @@ export default function Contact() {
             <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
               <Image
                 className="h-56 w-full object-cover lg:absolute lg:h-full"
-                src={icelandImage}
+                src={'/images/iceland.jpeg'}
                 alt=""
                 fill
               />

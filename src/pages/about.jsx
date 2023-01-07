@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Link from 'next/link'
 import clsx from 'clsx'
 
+import { MailIcon } from '@/components/SocialIcons'
+
 import { Container } from '@/components/Container'
 import {
   TwitterIcon,
@@ -27,17 +29,6 @@ function SocialLink({ className, href, children, icon: Icon }) {
   )
 }
 
-function MailIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path
-        fillRule="evenodd"
-        d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z"
-      />
-    </svg>
-  )
-}
-
 export default function About() {
   return (
     <>
@@ -50,13 +41,16 @@ export default function About() {
       </Head>
       <Container className="mt-16 sm:mt-32">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
-          <div className="lg:pl-20">
-            <div className="max-w-xs px-2.5 lg:max-w-none">
+          <div className="flex place-content-center lg:pl-20">
+            <div className="max-w-xs px-2.5 lg:max-w-none ">
               <Image
-                src={portraitImage}
+                unoptimized
+                src={'/images/portrait.png'}
                 alt="A portrait of Luke drinking a smoothie with a cat."
                 sizes="(min-width: 1024px) 32rem, 20rem"
-                className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+                className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800 lg:aspect-auto"
+                height="600"
+                width="400"
               />
             </div>
           </div>
@@ -229,11 +223,11 @@ export default function About() {
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink
-                href="mailto:spencer@planetaria.tech"
+                href="mailto:hi@lukebelliveau.dev"
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
-                spencer@planetaria.tech
+                hi@lukebelliveau.dev
               </SocialLink>
             </ul>
           </div>

@@ -5,7 +5,7 @@ import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import avatarImage from '@/images/avatar.jpg'
+// import avatarImage from '@/images/avatar.jpg'
 import { Fragment, useEffect, useRef } from 'react'
 
 function CloseIcon(props) {
@@ -121,11 +121,8 @@ function MobileNavigation(props) {
             </div>
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-                <MobileNavItem href="/about">About</MobileNavItem>
+                <MobileNavItem href="/about">Background</MobileNavItem>
                 <MobileNavItem href="/contact">Contact</MobileNavItem>
-                <MobileNavItem href="/projects">Projects</MobileNavItem>
-                <MobileNavItem href="/speaking">Speaking</MobileNavItem>
-                <MobileNavItem href="/uses">Uses</MobileNavItem>
               </ul>
             </nav>
           </Popover.Panel>
@@ -164,11 +161,8 @@ function DesktopNavigation(props) {
   return (
     <nav {...props}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-        <NavItem href="/about">About</NavItem>
+        <NavItem href="/about">Background</NavItem>
         <NavItem href="/contact">Contact</NavItem>
-        <NavItem href="/projects">Projects</NavItem>
-        <NavItem href="/speaking">Speaking</NavItem>
-        <NavItem href="/uses">Uses</NavItem>
       </ul>
     </nav>
   )
@@ -236,7 +230,7 @@ function Avatar({ large = false, className, ...props }) {
       {...props}
     >
       <Image
-        src={avatarImage}
+        src="/images/avatar.jpg"
         alt=""
         sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
@@ -244,6 +238,7 @@ function Avatar({ large = false, className, ...props }) {
           large ? 'h-16 w-16' : 'h-9 w-9'
         )}
         priority
+        fill
       />
     </Link>
   )

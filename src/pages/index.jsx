@@ -6,7 +6,7 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
-import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
+import { GitHubIcon, LinkedInIcon, MailIcon } from '@/components/SocialIcons'
 
 import reactLogo from '@/images/photos/react.png'
 import reduxLogo from '@/images/photos/redux.png'
@@ -286,6 +286,11 @@ export default function Home() {
               href="https://www.linkedin.com/in/lukebelliveau/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
+            />
+            <SocialLink
+              href="mailto:hi@lukebelliveau.dev"
+              aria-label="Email hi@lukebelliveau.dev"
+              icon={MailIcon}
             />
           </div>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
