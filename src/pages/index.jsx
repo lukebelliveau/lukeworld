@@ -169,7 +169,12 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
+      <Button
+        href="/files/resume.pdf"
+        target="_blank"
+        variant="secondary"
+        className="group mt-6 w-full"
+      >
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
@@ -270,8 +275,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Container className="mt-9">
-        <div className="max-w-2xl">
+      <Container className="flex-column mt-9 flex">
+        <div className="place-content-center">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             let&apos;s make stuff.
           </h1>
@@ -318,7 +323,7 @@ export default function Home() {
         <Tools />
       </Container>
       <Container className="mt-24 md:mt-28">
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
+        <div className="mx-auto flex flex max-w-xl place-content-center gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Resume />
           </div>
