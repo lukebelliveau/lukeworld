@@ -6,7 +6,7 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
-import { GitHubIcon } from '@/components/SocialIcons'
+import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 
 import reactLogo from '@/images/photos/react.png'
 import reduxLogo from '@/images/photos/redux.png'
@@ -85,7 +85,7 @@ function Article({ article }) {
 
 function SocialLink({ icon: Icon, ...props }) {
   return (
-    <Link className="group -m-1 p-1" {...props}>
+    <Link className="group -m-1 p-1" {...props} target="_blank">
       <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
     </Link>
   )
@@ -281,6 +281,11 @@ export default function Home() {
               href="https://github.com/lukebelliveau"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
+            />
+            <SocialLink
+              href="https://www.linkedin.com/in/lukebelliveau/"
+              aria-label="Follow on LinkedIn"
+              icon={LinkedInIcon}
             />
           </div>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">

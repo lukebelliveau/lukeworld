@@ -10,7 +10,7 @@ import {
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+import portraitImage from '@/images/portrait.png'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -18,6 +18,7 @@ function SocialLink({ className, href, children, icon: Icon }) {
       <Link
         href={href}
         className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+        target="_blank"
       >
         <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
         <span className="ml-4">{children}</span>
@@ -41,10 +42,10 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About - Spencer Sharp</title>
+        <title>About - Luke Belliveau</title>
         <meta
           name="description"
-          content="I’m Spencer Sharp. I live in New York City, where I design the future."
+          content="I’m Luke Belliveau. Let's build something together."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -53,7 +54,7 @@ export default function About() {
             <div className="max-w-xs px-2.5 lg:max-w-none">
               <Image
                 src={portraitImage}
-                alt=""
+                alt="A portrait of Luke drinking a smoothie with a cat."
                 sizes="(min-width: 1024px) 32rem, 20rem"
                 className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               />
@@ -61,50 +62,170 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Spencer Sharp. I live in New York City, where I design the
-              future.
+              Let&apos;s build something together.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-              <p>
-                I’ve loved making things for as long as I can remember, and
-                wrote my first program when I was 6 years old, just two weeks
-                after my mom brought home the brand new Macintosh LC 550 that I
-                taught myself to type on.
+              <p className="italic">
+                If you&apos;re looking for a highlight reel of my skills as a
+                developer, check out{' '}
+                <Link
+                  href={'https://www.zuut.co'}
+                  className="underline underline-offset-4 hover:text-teal-500 dark:hover:text-teal-400"
+                  target="_blank"
+                >
+                  ZUUT
+                </Link>
+                !
               </p>
               <p>
-                The only thing I loved more than computers as a kid was space.
-                When I was 8, I climbed the 40-foot oak tree at the back of our
-                yard while wearing my older sister’s motorcycle helmet, counted
-                down from three, and jumped — hoping the tree was tall enough
-                that with just a bit of momentum I’d be able to get to orbit.
+                Welcome to my corner of the internet! My name is Luke. I&apos;m
+                a software engineer from the USA, currently living in Hungary.
               </p>
               <p>
-                I spent the next few summers indoors working on a rocket design,
-                while I recovered from the multiple surgeries it took to fix my
-                badly broken legs. It took nine iterations, but when I was 15 I
-                sent my dad’s Blackberry into orbit and was able to transmit a
-                photo back down to our family computer from space.
+                After getting my Computer Science degree from UCONN in 2016, I
+                spent a couple of years in Chicago working at{' '}
+                <Link
+                  href={'https://www.thoughtworks.com/en-us'}
+                  className="underline underline-offset-4 hover:text-teal-500 dark:hover:text-teal-400"
+                  target="_blank"
+                >
+                  ThoughtWorks
+                </Link>{' '}
+                in domains like insurance administration, e-commerce, and
+                cybersecurity. On my teams I tended to steward our test
+                automation, and did my best to serve as a company-wide
+                specialist in React and Redux. I also got the opportunity to
+                write some servers in Go, which was pretty rad. Around this time
+                I also had the opportunity to build the SATURATION Android
+                application for{' '}
+                <Link
+                  href={'https://www.brckhmptn.com/'}
+                  className="underline underline-offset-4 hover:text-teal-500 dark:hover:text-teal-400"
+                  target="_blank"
+                >
+                  BROCKHAMPTON
+                </Link>
+                , a world-famous musical group and one of my personal favorites.
+                In the years it was live, it was installed by over 10,000 users
+                and enjoyed a five-star rating on the Google Play store.
               </p>
               <p>
-                Today, I’m the founder of Planetaria, where we’re working on
-                civilian space suits and manned shuttle kits you can assemble at
-                home so that the next generation of kids really <em>can</em>{' '}
-                make it to orbit — from the comfort of their own backyards.
+                I then went on to work on the Cloud Infrastructure team at
+                GrubHub in NYC.{' '}
+                <Link
+                  href={
+                    'https://bytes.grubhub.com/cloud-infrastructure-at-grubhub-94db998a898a'
+                  }
+                  className="underline underline-offset-4 hover:text-teal-500 dark:hover:text-teal-400"
+                  target="_blank"
+                >
+                  Migrating to a custom-built infrastructure platform
+                </Link>{' '}
+                reminiscent of the systems at Netflix, they needed somebody with
+                system design & architecture chops, paired with the front-end
+                skills to build out their management consoles. I enjoyed working
+                on the Java frameworks & services that were consumed by our
+                application developers to build, test & deploy their
+                applications. I also had the opportunity to build out GUIs for
+                our Site Reliabililty Engineers to use in times of crisis - in
+                times of crisis, the last we needed is a fat-fingered or
+                mistaken command line entry! I also completed a successful
+                proposal for a new notifications platform. This was to
+                facilitate notification management across all mediums at Grubhub
+                and involved architecture designs with a Java backend +
+                TypeScript frontend, backed by a Cassandra database. After
+                putting together the architecture diagrams and DB schemas, my
+                design was approved our organization-wide review council of
+                engineers! We began work on it the next week.
+              </p>
+              <p>
+                In January 2020, I took stock of my 4-year career and decided to
+                take a sabbatical. I wrapped up at Grubhub and left to go
+                backpacking around Europe, blissfully unaware of how the year
+                would unfold! I spent a few months volunteering at a hostel in
+                Hungary until the pandemic happened and the world shut down. I
+                spent the year hunkered down in Budapest, taking on shorter term
+                software contracts to pay rent as I waited for our hostel to
+                open back up - an event that unfortunately never came to
+                fruition. Not quite the year I planned for, but I did manage to
+                fall in love with a new city! As we sat inside all year, I took
+                on some shorter term software contracts to pay the rent. Among
+                these was a stint with the Software Freedom Conservancy, for
+                whom I rebuilt the website for{' '}
+                <Link
+                  href={'https://www.selenium.dev/'}
+                  className="underline underline-offset-4 hover:text-teal-500 dark:hover:text-teal-400"
+                  target="_blank"
+                >
+                  Selenium
+                </Link>
+                , a popular open source browser automation tool.
+              </p>
+              <p>
+                A year later, I decided to dive back into software - this time,
+                as a free agent. Since early 2021 I have worked with{' '}
+                <Link
+                  href={'https://www.nuwavetech.com/'}
+                  className="underline underline-offset-4 hover:text-teal-500 dark:hover:text-teal-400"
+                  target="_blank"
+                >
+                  Nuwave Technologies
+                </Link>{' '}
+                as their resident front-end expert. NuWave sells some great
+                applications for Nonstop servers, and I&apos;ve enjoyed managing
+                the design, development and release of their front-end code. I
+                also manage automated deployment pipelines using AWS EC2 +
+                Jenkins, and introduced a comprehensive practice of full-suite
+                testing using Jest and Cypress.io.
+              </p>
+              <p>
+                I also work on{' '}
+                <Link
+                  href={'https://www.zuut.co'}
+                  className="underline underline-offset-4 hover:text-teal-500 dark:hover:text-teal-400"
+                  target="_blank"
+                >
+                  ZUUT.co
+                </Link>
+                , a computer-aided design tool that assists people in planning
+                out and executing their cannabis grows. This one&apos;s a doozy,
+                and is a solid showcase of what I like to do. ZUUT features an
+                deeply interactive drag-and-drop design tool, with sync, save
+                and share features modeled after Google Docs. Users are assisted
+                by a complex interaction and collision detection engine, which
+                provides immediate feedback on the current state of the
+                user&apos;s work. The tool runs entirely in the browser and was
+                built with React, Redux, Next.js, and Firebase - with support
+                from Airtable and Contentful. Here I am especially proud of the
+                smooth Builder interface, convenient auto-saving/sharing
+                features, and an optimized build/deploy strategy that keeps
+                first loads and JS bundles light, (and Lighthouse scores high!)
+                despite the heavy nature of the application.
+              </p>
+              <p>
+                I currently live in Budapest, and split time between here and
+                the Greater Boston area where I grew up. When I&apos;m not
+                coding, you might find me snowboarding or noodling on my
+                keyboard or telecaster. I am currently open to contract, part
+                time and full time work. If you think we&apos;re a good fit,
+                I&apos;d love to hear from you!
               </p>
             </div>
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="#" icon={TwitterIcon}>
-                Follow on Twitter
-              </SocialLink>
-              <SocialLink href="#" icon={InstagramIcon} className="mt-4">
-                Follow on Instagram
-              </SocialLink>
-              <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+              <SocialLink
+                href="https://github.com/lukebelliveau"
+                icon={GitHubIcon}
+                className="mt-4"
+              >
                 Follow on GitHub
               </SocialLink>
-              <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+              <SocialLink
+                href="https://www.linkedin.com/in/lukebelliveau/"
+                icon={LinkedInIcon}
+                className="mt-4"
+              >
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink
