@@ -16,37 +16,15 @@ import jsLogo from '@/images/photos/javascript.png'
 import viteLogo from '@/images/photos/vite.png'
 import jestLogo from '@/images/photos/jest.svg'
 import nextLogo from '@/images/photos/next.png'
+import cypressLogo from '@/images/photos/cypress.jpg'
+import tailwindLogo from '@/images/photos/tailwind.svg'
+import jenkinsLogo from '@/images/photos/jenkins.png'
 import vercelLogo from '@/images/photos/vercel.png'
 import dockerLogo from '@/images/photos/docker.webp'
 import firebaseLogo from '@/images/photos/firebase.png'
 
-import { generateRssFeed } from '@/lib/generateRssFeed'
-import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
 import next from 'next'
-
-function MailIcon(props) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-      {...props}
-    >
-      <path
-        d="M2.75 7.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
-        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
-      />
-      <path
-        d="m4 6 6.024 5.479a2.915 2.915 0 0 0 3.952 0L20 6"
-        className="stroke-zinc-400 dark:stroke-zinc-500"
-      />
-    </svg>
-  )
-}
 
 function BriefcaseIcon(props) {
   return (
@@ -192,12 +170,12 @@ function Resume() {
 
 const toolList = [
   {
-    image: reactLogo,
-    label: 'React',
+    image: vercelLogo,
+    label: 'Next.js \\\\ Vercel',
   },
   {
-    image: reduxLogo,
-    label: 'Redux',
+    image: dockerLogo,
+    label: 'Docker',
   },
 
   {
@@ -213,74 +191,54 @@ const toolList = [
     label: 'Vite',
   },
   {
+    image: firebaseLogo,
+    label: 'Firebase',
+  },
+  {
+    image: tailwindLogo,
+    label: 'Tailwind CSS \\\\ UI',
+  },
+  {
+    image: jenkinsLogo,
+    label: 'Jenkins',
+  },
+  {
+    image: reactLogo,
+    label: 'React',
+  },
+  {
+    image: reduxLogo,
+    label: 'Redux',
+  },
+  {
     image: jestLogo,
     label: 'Jest',
   },
   {
-    image: vercelLogo,
-    label: 'Next.js \\ Vercel',
-  },
-  {
-    image: dockerLogo,
-    label: 'Docker',
-  },
-  {
-    image: firebaseLogo,
-    label: 'Firebase',
+    image: cypressLogo,
+    label: 'Cypress',
   },
 ]
-
-// function Tools() {
-//   return (
-//     <div className="mt-16 sm:mt-20">
-//       {/* <div className="-mt-4 grid grid-cols-3 justify-center gap-10 overflow-hidden overflow-scroll pt-4 pb-8 sm:gap-4"> */}
-//       <div className="grid auto-cols-max grid-flow-col auto-rows-max gap-10 sm:gap-8">
-//         {toolList.map((tool, imageIndex) => (
-//           <div
-//             key={tool.image.src}
-//             className={clsx(
-//               'relative aspect-square w-6 flex-none rounded-xl sm:w-20 sm:rounded-2xl'
-//             )}
-//           >
-//             <div className="relative inset-0 flex h-full w-full place-content-center">
-//               <Image
-//                 src={tool.image}
-//                 alt=""
-//                 // sizes="(min-width: 640px) 18rem, 11rem"
-//                 className="max-w-auto max-h-20"
-//               />
-//             </div>
-//             <div className="relative flex w-full place-content-center">
-//               <span className="text-[12px] dark:text-white sm:text-[12px]">
-//                 {tool.label}
-//               </span>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   )
-// }
 
 function Tools() {
   return (
     <div className="mt-16 flex place-content-center sm:mt-20">
       {/* <div className="-mt-4 grid grid-cols-3 justify-center gap-10 overflow-hidden overflow-scroll pt-4 pb-8 sm:gap-4"> */}
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid grid-cols-4 gap-10 md:grid-cols-4 2xl:grid-cols-6">
         {toolList.map((tool, imageIndex) => (
           <div
             key={tool.image.src}
             // className={clsx(
             //   'relative aspect-square w-6 flex-none rounded-xl sm:w-20 sm:rounded-2xl'
             // )}
-            className="w-18 aspect-square flex-none rounded-xl sm:w-40 sm:rounded-2xl"
+            className="aspect-square w-16 flex-none rounded-xl sm:w-40 sm:rounded-2xl"
           >
             <div className="relative inset-0 flex h-full w-full place-content-center">
               <Image
                 src={tool.image}
                 alt=""
                 sizes="(min-width: 640px) 18rem, 11rem"
-                className="max-w-auto max-h-20"
+                className="max-w-auto  max-h-21"
               />
             </div>
             <div className="relative flex w-full place-content-center">
@@ -295,7 +253,7 @@ function Tools() {
   )
 }
 
-export default function Home({ articles }) {
+export default function Home() {
   return (
     <>
       <Head>
@@ -355,16 +313,16 @@ export default function Home({ articles }) {
   )
 }
 
-export async function getStaticProps() {
-  if (process.env.NODE_ENV === 'production') {
-    await generateRssFeed()
-  }
+// export async function getStaticProps() {
+//   if (process.env.NODE_ENV === 'production') {
+//     await generateRssFeed()
+//   }
 
-  return {
-    props: {
-      articles: (await getAllArticles())
-        .slice(0, 4)
-        .map(({ component, ...meta }) => meta),
-    },
-  }
-}
+//   return {
+//     props: {
+//       articles: (await getAllArticles())
+//         .slice(0, 4)
+//         .map(({ component, ...meta }) => meta),
+//     },
+//   }
+// }
