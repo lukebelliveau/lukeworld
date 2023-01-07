@@ -169,7 +169,11 @@ export default function About() {
                 the design, development and release of their front-end code. I
                 also manage automated deployment pipelines using AWS EC2 +
                 Jenkins, and introduced a comprehensive practice of full-suite
-                testing using Jest and Cypress.io.
+                testing using Jest and Cypress.io. After educating other
+                engineers at the company about best testing practices and
+                lobbying for a strong automated test culture, I&apos;m confident
+                that these practices will stay prevalent in this organization
+                long after I&apos;m gone.
               </p>
               <p>
                 I also work on{' '}
