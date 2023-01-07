@@ -87,10 +87,10 @@ export default function About() {
                 in domains like insurance administration, e-commerce, and
                 cybersecurity. On my teams I tended to steward our test
                 automation, and did my best to serve as a company-wide
-                specialist in React and Redux. I also got the opportunity to
-                write some servers in Go, which was pretty rad. Around this time
-                I also had the opportunity to build the SATURATION Android
-                application for{' '}
+                specialist for TypeScript, node, React, and Redux. I also got
+                the opportunity to write some servers in Go, which was pretty
+                rad. Around this time I also had the opportunity to build the
+                SATURATION Android application for{' '}
                 <Link
                   href={'https://www.brckhmptn.com/'}
                   className="underline underline-offset-4 hover:text-teal-500 dark:hover:text-teal-400"
