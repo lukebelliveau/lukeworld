@@ -3,17 +3,10 @@ import Head from 'next/head'
 import Link from 'next/link'
 import clsx from 'clsx'
 
-import { MailIcon } from '../components/SocialIcons'
-
 import { Container } from '../components/Container'
-import {
-  TwitterIcon,
-  InstagramIcon,
-  GitHubIcon,
-  LinkedInIcon,
-} from '../components/SocialIcons'
+import { GitHubIcon, LinkedInIcon, MailIcon } from '../components/SocialIcons'
 
-function SocialLink({ className, href, children, icon: Icon }) {
+export function SocialLink({ className, href, children, icon: Icon }) {
   return (
     <li className={clsx(className, 'flex')}>
       <Link
@@ -235,7 +228,6 @@ export default function About() {
                 href="mailto:hi@lukebelliveau.dev"
                 icon={MailIcon}
                 className="mt-4"
-                // className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
                 hi@lukebelliveau.dev
               </SocialLink>
