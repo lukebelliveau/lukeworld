@@ -22,7 +22,6 @@ export default function Contact() {
   })
 
   const onSubmit = async (data) => {
-    console.log('data', data)
     await submit({ data })
     showToast()
     reset()
