@@ -1,4 +1,5 @@
 import { Head, Html, Main, NextScript } from 'next/document'
+import Script from 'next/script'
 
 const modeScript = `
   let darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
@@ -49,6 +50,10 @@ export default function Document() {
           rel="alternate"
           type="application/feed+json"
           href={`${process.env.NEXT_PUBLIC_SITE_URL}/rss/feed.json`}
+        />
+        <Script
+          data-domain="lukebelliveau.dev"
+          src="https://plausible.io/js/script.js"
         />
       </Head>
       <body className="flex h-full flex-col bg-zinc-50 dark:bg-black">
