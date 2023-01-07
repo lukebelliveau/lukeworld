@@ -285,7 +285,7 @@ export default function Home() {
         </div>
         <Tools />
       </Container>
-      <Container className="mt-24 md:mt-28">
+      <Container className="mt-16 md:mt-28 lg:hidden">
         <div className="mx-auto flex flex max-w-xl place-content-center gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="space-y-10">
             <Resume className="lg:hidden" />
