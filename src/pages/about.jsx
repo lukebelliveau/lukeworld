@@ -203,9 +203,9 @@ export default function About() {
                 I currently live in Budapest, and split time between here and
                 the Greater Boston area where I grew up. When I&apos;m not
                 coding, you might find me snowboarding or noodling on my
-                keyboard or telecaster. I am currently open to contract, part
-                time and full time work. If you think we&apos;re a good fit,
-                I&apos;d love to hear from you!
+                beginner&apos;s keyboard or sky-pink Köves telecaster. I am
+                currently open to contract, part time and full time work. If you
+                think we may be a good fit, I&apos;d love to hear from you!
               </p>
             </div>
           </div>
