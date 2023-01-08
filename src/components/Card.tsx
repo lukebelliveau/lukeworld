@@ -27,7 +27,11 @@ interface CardProps extends PropsWithChildren {
   decorate?: boolean
 }
 
-export function Card({ as: Component, className = '', children }: CardProps) {
+export function Card({
+  as: Component = 'div',
+  className = '',
+  children,
+}: CardProps) {
   return (
     <Component
       className={clsx(className, 'group relative flex flex-col items-start')}
