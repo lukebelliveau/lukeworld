@@ -196,9 +196,9 @@ export default function About() {
                 I currently live in Budapest, and split time between here and
                 the Greater Boston area where I grew up. When I&apos;m not
                 coding, you might find me snowboarding or noodling on my
-                beginner&apos;s keyboard or sky-pink Köves telecaster. I am
-                currently open to contract, part time and full time work. If you
-                think we may be a good fit, I&apos;d love to{' '}
+                beginner&apos;s keyboard or sky-pink telecaster. I am currently
+                open to contract, part time and full time work. If you think we
+                may be a good fit, I&apos;d love to{' '}
                 <Link
                   href={'/contact'}
                   className="underline underline-offset-4 hover:text-teal-500 dark:hover:text-teal-400"
