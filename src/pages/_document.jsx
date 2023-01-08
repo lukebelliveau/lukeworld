@@ -81,7 +81,7 @@ export default function Document() {
           name="twitter:description"
           content="ZUUT is a tool for growers to create plans and purchase products for cannabis grows. If you want to learn how to grow weed, this is the place to start."
         />
-        <meta name="twitter:image" content={HOSTED_LOGO_URL} />
+        <meta name="twitter:image" content={'/images/portrait.png'} />
       </Head>
       <body className="flex h-full flex-col bg-zinc-50 dark:bg-black">
         <Main />
