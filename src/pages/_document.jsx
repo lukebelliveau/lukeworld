@@ -67,7 +67,7 @@ export default function Document() {
           property="og:description"
           content="Luke Belliveau is a software delivery consultant specializing in full stack web applications and services."
         />
-        <meta property="og:image" content={'/images/avatar.png'} />
+        <meta property="og:image" content={'/images/avatar.jpg'} />
 
         {/* <!-- Twitter Meta Tags --> */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -81,7 +81,7 @@ export default function Document() {
           name="twitter:description"
           content="ZUUT is a tool for growers to create plans and purchase products for cannabis grows. If you want to learn how to grow weed, this is the place to start."
         />
-        <meta name="twitter:image" content={'/images/avatar.png'} />
+        <meta name="twitter:image" content={'/images/avatar.jpg'} />
       </Head>
       <body className="flex h-full flex-col bg-zinc-50 dark:bg-black">
         <Main />
