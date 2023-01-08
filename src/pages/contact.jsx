@@ -253,7 +253,7 @@ export default function Contact() {
                       htmlFor="how-did-you-hear-about-us"
                       className="block text-sm font-medium text-zinc-200 dark:text-zinc-200 lg:text-gray-700"
                     >
-                      How did you find me?
+                      How did you find me :)?
                     </label>
                     <div className="mt-1">
                       <input
