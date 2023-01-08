@@ -74,11 +74,11 @@ export default function Projects() {
         <title>Projects - Luke Belliveau</title>
         <meta
           name="description"
-          content="Things I've built that I'm proud of"
+          content="Luke Belliveau's project page. These are some things I've built that I'm proud of. Luke Belliveau is a software delivery consultant specializing in full stack web applications and services."
         />
       </Head>
       <SimpleLayout
-        title="progress report"
+        title="selected works"
         intro="While much of my professional work is proprietary, internal tooling, I've been fortunate enough to work on a handful of things that are publicly available. Here's a small sample of the stuff I've built as a consultant."
       >
         <ul
