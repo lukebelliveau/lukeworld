@@ -16,7 +16,7 @@ const projects = [
   {
     name: 'Prizm API Gateway',
     description:
-      'A comprehensive API Gateway built to run on Nonstop servers. I handled the development for all front-end, test automation, and deployment code - from our inception in early 2021 to our successful launch in 2022. The console product itself is proprietary, but the link below provies some more context on what this tool does.',
+      'A comprehensive API Gateway built to run on Nonstop servers. I handled the development for all front-end, test automation, and deployment code - from our inception in early 2021 to our successful launch in 2022. The console product itself is proprietary, but the link below provides some more context on what this tool does.',
     link: {
       href: 'https://www.nuwavetech.com/prizm-gateway',
       label: 'nuwavetech.com',

@@ -199,7 +199,7 @@ function Tools() {
                 src={tool.image}
                 alt=""
                 sizes="(min-width: 640px) 18rem, 11rem"
-                className="max-w-auto max-h-21 rounded-2xl object-contain"
+                className="max-w-auto max-h-21 rounded-md object-contain"
                 fill
               />
             </div>
