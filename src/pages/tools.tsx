@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Container className="flex-column mt-9 flex font-mono">
+      <Container className="flex-column mt-36 flex font-mono">
         <div className="flex">
           <div className="w-full">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
