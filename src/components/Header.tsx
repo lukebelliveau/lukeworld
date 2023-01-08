@@ -2,6 +2,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Popover, Transition } from '@headlessui/react'
+import {
+  BoltIcon,
+  BookOpenIcon,
+  ChatBubbleBottomCenterIcon,
+  WrenchScrewdriverIcon,
+} from '@heroicons/react/24/outline'
 import clsx from 'clsx'
 
 import { Container } from './Container'
@@ -68,12 +74,18 @@ function MoonIcon(props) {
   )
 }
 
-function MobileNavItem({ href, children }) {
+function MobileNavItem({ href, icon: Icon, children }) {
   return (
     <li>
-      <Popover.Button as={Link} href={href} className="block py-2">
-        {children}
-      </Popover.Button>
+      <div className="flex items-center">
+        <div className="mr-1 flex h-4 w-4 shrink-0 items-center justify-center fill-black text-white dark:fill-zinc-800 sm:h-12 sm:w-12">
+          <Icon />
+        </div>
+
+        <Popover.Button as={Link} href={href} className="block py-2">
+          {children}
+        </Popover.Button>
+      </div>
     </li>
   )
 }
@@ -89,17 +101,6 @@ function MobileNavigation(props) {
         <Transition.Child
           as={Fragment}
           enter="duration-150 ease-out"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="duration-150 ease-in"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
-        >
-          <Popover.Overlay className="fixed inset-0 z-50 bg-zinc-800/40 backdrop-blur-sm dark:bg-black/80" />
-        </Transition.Child>
-        <Transition.Child
-          as={Fragment}
-          enter="duration-150 ease-out"
           enterFrom="opacity-0 scale-95"
           enterTo="opacity-100 scale-100"
           leave="duration-150 ease-in"
@@ -108,22 +109,25 @@ function MobileNavigation(props) {
         >
           <Popover.Panel
             focus
-            className="fixed inset-x-4 top-8 z-50 origin-top rounded-3xl bg-white p-8 ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800"
+            className="fixed right-4 top-20 z-50 w-1/2 origin-top rounded-3xl bg-white p-8 ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800"
           >
-            <div className="flex flex-row-reverse items-center justify-between">
-              <Popover.Button aria-label="Close menu" className="-m-1 p-1">
-                <CloseIcon className="h-6 w-6 text-zinc-500 dark:text-zinc-400" />
-              </Popover.Button>
-              <h2 className="text-sm font-medium text-zinc-600 dark:text-zinc-400">
-                GOTO
-              </h2>
-            </div>
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-                <MobileNavItem href="/about">Background</MobileNavItem>
-                <MobileNavItem href="/contact">Contact</MobileNavItem>
-                <MobileNavItem href="/projects">Projects</MobileNavItem>
-                <MobileNavItem href="/tools">Tools</MobileNavItem>
+                <MobileNavItem href="/about" icon={BookOpenIcon}>
+                  Background
+                </MobileNavItem>
+                <MobileNavItem
+                  href="/contact"
+                  icon={ChatBubbleBottomCenterIcon}
+                >
+                  Contact
+                </MobileNavItem>
+                <MobileNavItem href="/projects" icon={BoltIcon}>
+                  Projects
+                </MobileNavItem>
+                <MobileNavItem href="/tools" icon={WrenchScrewdriverIcon}>
+                  Tools
+                </MobileNavItem>
               </ul>
             </nav>
           </Popover.Panel>
@@ -410,6 +414,7 @@ export function Header() {
               </div>
               <div className="flex flex-1 justify-end md:justify-center">
                 <MobileNavigation className="pointer-events-auto md:hidden" />
+                {/* <NewMobileNavigation /> */}
                 <DesktopNavigation className="pointer-events-auto hidden md:block" />
               </div>
               <div className="flex justify-end md:flex-1">
