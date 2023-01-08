@@ -54,7 +54,7 @@ export default function Contact() {
             <div className="lg:pr-8">
               <div className="mx-auto max-w-md py-8 sm:max-w-lg lg:mx-0">
                 <h2 className="text-4xl font-bold tracking-tight text-zinc-100 dark:text-zinc-100 sm:text-5xl lg:text-inherit">
-                  let&apos;s work together
+                  getting Things done
                 </h2>
                 <p className="mt-4 text-lg text-zinc-200 dark:text-zinc-200 sm:mt-3 lg:text-inherit">
                   I&apos;m currently taking contract work, and open to a part or

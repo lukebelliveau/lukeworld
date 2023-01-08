@@ -232,7 +232,7 @@ export default function Home() {
         <div className="flex">
           <div className="w-full lg:w-4/5">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              let&apos;s make stuff.
+              let&apos;s make stuff
             </h1>
 
             <div className="mt-6 flex gap-6">
