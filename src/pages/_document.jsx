@@ -35,7 +35,7 @@ const modeScript = `
   }
 `
 
-const AVATAR_URL = 'https://i.ibb.co/qBvsPVc/avatar.jpg'
+const AVATAR_URL = 'https://i.ibb.co/CBbfLQp/og-image-lukebelliveau.png'
 
 export default function Document() {
   return (
