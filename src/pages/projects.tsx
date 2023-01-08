@@ -33,9 +33,20 @@ const projects = [
     year: '2019',
   },
   {
+    name: "Devil's Dice",
+    description:
+      'I was hired to build this exciting party game in 2018, where users place a phone on the table and face various challenges based on the roll of the dice. This app has a special place in my heart - a year after its release, I was staying at a hostel in Slovakia, and I noticed a group of people were playing the game in the kitchen! It remains active today, and enjoys a 4.5 star rating on the Google Play Store with over 10,000 downloads.',
+    link: {
+      href: 'https://play.google.com/store/apps/details?id=com.devilsdicegame.devilsdice&ref=producthunt',
+      label: 'play.google.com',
+    },
+    logo: '/images/logos/devilsdice.png',
+    year: '2018',
+  },
+  {
     name: 'SATURATION',
     description:
-      'Official application for world-famous boyband BROCKHAMPTON, designed to release music videos and other exclusive goodies before their general release to external platforms.  With over 10,000 users, SATURATION enjoyed a rating of 5 stars on the Google Play store, where it was active from 2017-2019.',
+      'Official application for world-famous boyband BROCKHAMPTON, designed to release music videos and other exclusive goodies before their general release to external platforms.  With over 10,000 downloads, SATURATION enjoyed a rating of 5 stars on the Google Play store, where it was active from 2017-2019.',
     link: {
       href: 'https://www.brckhmptn.com',
       label: 'brckhmptn.com',
@@ -72,7 +83,7 @@ export default function Projects() {
       >
         <ul
           role="list"
-          className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-4"
+          className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
         >
           {projects.map((project) => (
             <Card as="li" key={project.name} className="justify-between">
