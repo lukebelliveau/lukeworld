@@ -8,26 +8,10 @@ const projects = [
   {
     name: 'ZUUT',
     description:
-      'Full-featured computer-aided-design tool for planning & executing cannabis grow operations. Features smooth, deep canvas interactions and broad account management features.  Check out the builder to have some fun!',
+      "Full featured computer-aided-design tool for planning & executing cannabis grow operations. Features smooth, deep canvas interactions and broad account management features.  Check out the builder, it's pretty fun to play around with.",
     link: { href: 'https://www.zuut.co', label: 'zuut.co' },
     logo: '/images/logos/zuut.jpg',
-  },
-  {
-    name: 'Selenium',
-    description:
-      'Given a set of mockups, I delivered a speedy static website for Selenium, a popular browser automation tool. Built with Jekyll and Hugo - under time and budget.',
-    link: { href: 'https://www.selenium.dev', label: 'selenium.dev' },
-    logo: '/images/logos/selenium.png',
-  },
-  {
-    name: 'SATURATION',
-    description:
-      'Official application for world-famous boyband BROCKHAMPTON, designed to release music videos and other exclusive goodies before their general release to external platforms.  With over 10,000 users, SATURATION enjoyed a rating of 5 stars on the Google Play store, where it was active from 2017-2019.',
-    link: {
-      href: 'https://www.nuwavetech.com/prizm-gateway',
-      label: 'nuwavetech.com',
-    },
-    logo: '/images/logos/brockhampton.png',
+    year: '2022',
   },
   {
     name: 'Prizm API Gateway',
@@ -38,6 +22,26 @@ const projects = [
       label: 'nuwavetech.com',
     },
     logo: '/images/logos/nuwave.jpg',
+    year: '2021',
+  },
+  {
+    name: 'Selenium.dev',
+    description:
+      'Given a set of mockups, I delivered a speedy static website for Selenium, a popular browser automation tool. Built with Jekyll and Hugo - under time and budget.',
+    link: { href: 'https://www.selenium.dev', label: 'selenium.dev' },
+    logo: '/images/logos/selenium.png',
+    year: '2019',
+  },
+  {
+    name: 'SATURATION',
+    description:
+      'Official application for world-famous boyband BROCKHAMPTON, designed to release music videos and other exclusive goodies before their general release to external platforms.  With over 10,000 users, SATURATION enjoyed a rating of 5 stars on the Google Play store, where it was active from 2017-2019.',
+    link: {
+      href: 'https://www.brckhmptn.com',
+      label: 'brckhmptn.com',
+    },
+    logo: '/images/logos/brockhampton.png',
+    year: '2017',
   },
 ]
 
@@ -68,7 +72,7 @@ export default function Projects() {
       >
         <ul
           role="list"
-          className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+          className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-4"
         >
           {projects.map((project) => (
             <Card as="li" key={project.name} className="justify-between">
@@ -81,6 +85,7 @@ export default function Projects() {
                     {project.name}
                   </Card.Link>
                 </h2>
+                <Card.Description>{project.year}</Card.Description>
                 <Card.Description>{project.description}</Card.Description>
               </div>
               <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
