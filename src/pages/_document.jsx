@@ -55,6 +55,33 @@ export default function Document() {
           data-domain="lukebelliveau.dev"
           src="https://plausible.io/js/script.js"
         ></script>
+
+        {/* <!-- Facebook Meta Tags --> */}
+        <meta property="og:url" content="https://www.lukebelliveau.dev" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Luke Belliveau - Professional Software Delivery"
+        />
+        <meta
+          property="og:description"
+          content="Luke Belliveau is a software delivery specialist for full stack web applications and services."
+        />
+        <meta property="og:image" content={'/images/portrait.png'} />
+
+        {/* <!-- Twitter Meta Tags --> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="lukebelliveau.dev" />
+        <meta property="twitter:url" content="https://www.lukebelliveau.dev" />
+        <meta
+          name="twitter:title"
+          content="Luke Belliveau - Professional Software Delivery"
+        />
+        <meta
+          name="twitter:description"
+          content="ZUUT is a tool for growers to create plans and purchase products for cannabis grows. If you want to learn how to grow weed, this is the place to start."
+        />
+        <meta name="twitter:image" content={HOSTED_LOGO_URL} />
       </Head>
       <body className="flex h-full flex-col bg-zinc-50 dark:bg-black">
         <Main />
