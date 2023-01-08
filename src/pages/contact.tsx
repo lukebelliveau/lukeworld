@@ -4,8 +4,25 @@ import { Container } from '../components/Container'
 import { useFormspark } from '@formspark/use-formspark'
 import { useForm } from 'react-hook-form'
 import toast, { Toaster } from 'react-hot-toast'
-import { SocialLink } from './about'
 import { GitHubIcon, LinkedInIcon, MailIcon } from '../components/SocialIcons'
+import clsx from 'clsx'
+import Link from 'next/link'
+
+export function SocialLink({ className, href, children, icon: Icon }) {
+  return (
+    <Link
+      href={href}
+      className={clsx(
+        className,
+        'group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500'
+      )}
+      target="_blank"
+    >
+      <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
+      <span className="ml-1 hidden sm:block">{children}</span>
+    </Link>
+  )
+}
 
 const showToast = () =>
   toast(`Thanks for the shout, I'll get back to you soon!`)
@@ -50,7 +67,7 @@ export default function Contact() {
               />
             </div>
           </div>
-          <div className="relative rounded-2xl bg-black/[.70] py-4 px-6 sm:py-24 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:bg-transparent lg:px-8 lg:py-8">
+          <div className="relative rounded-2xl bg-black/[.70] py-4 px-6 sm:py-24 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:bg-transparent lg:px-0 lg:py-8">
             <div className="lg:pr-8">
               <div className="mx-auto max-w-md py-8 sm:max-w-lg lg:mx-0">
                 <h2 className="text-4xl font-bold tracking-tight text-zinc-100 dark:text-zinc-100 sm:text-5xl lg:text-inherit">
@@ -277,8 +294,8 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="lg:pl-20">
-          <ul role="list">
+        <div className="">
+          <div className="flex w-full justify-around lg:justify-start">
             <SocialLink
               href="https://github.com/lukebelliveau"
               icon={GitHubIcon}
@@ -289,18 +306,18 @@ export default function Contact() {
             <SocialLink
               href="https://www.linkedin.com/in/lukebelliveau/"
               icon={LinkedInIcon}
-              className="mt-4"
+              className="mt-4 pl-4"
             >
               LinkedIn
             </SocialLink>
             <SocialLink
               href="mailto:hi@lukebelliveau.dev"
               icon={MailIcon}
-              className="mt-4"
+              className="mt-4 pl-4"
             >
               hi@lukebelliveau.dev
             </SocialLink>
-          </ul>
+          </div>
         </div>
       </Container>
       <Toaster position="bottom-left" />

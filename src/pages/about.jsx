@@ -31,7 +31,7 @@ export default function About() {
           content="I’m Luke Belliveau. Let's build something together."
         />
       </Head>
-      <Container className="mt-16 sm:mt-32">
+      <Container className="mt-16 sm:mt-36">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
           <div className="flex place-content-center lg:pl-20">
             <div className="max-w-xs px-2.5 lg:max-w-none ">
