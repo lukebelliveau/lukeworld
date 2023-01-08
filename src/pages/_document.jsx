@@ -35,7 +35,7 @@ const modeScript = `
   }
 `
 
-const AVATAR_URL = 'https://ibb.co/NxMjHbJ'
+const AVATAR_URL = 'https://i.ibb.co/qBvsPVc/avatar.jpg'
 
 export default function Document() {
   return (
