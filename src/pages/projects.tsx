@@ -68,7 +68,7 @@ export default function Projects() {
       </Head>
       <SimpleLayout
         title="progress report"
-        intro="While much of my professional work is proprietary, internal tooling, I've been fortunate enough to work on a few things that are accessible to anybody with an internet connection. Here's a small sample of the stuff I've built as a consultant."
+        intro="While much of my professional work is proprietary, internal tooling, I've been fortunate enough to work on a handful of things that are publicly available. Here's a small sample of the stuff I've built as a consultant."
       >
         <ul
           role="list"

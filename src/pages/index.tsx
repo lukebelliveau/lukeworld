@@ -252,11 +252,11 @@ export default function Home() {
               />
             </div>
             <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-              Hi! I&apos;m Luke. I am a full stack software engineer serving as
-              a software delivery specialist.
+              Hi! I&apos;m Luke. I am a software engineer serving as a delivery
+              specialist for full stack web applications and services.
             </p>
             <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-              With 7 years of experience writing code up and down the stack,
+              With 7 years of experience building systems at enterprise scale,
               I&apos;ve spent the last couple of years working as an independent
               consultant.
             </p>

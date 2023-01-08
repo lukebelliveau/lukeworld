@@ -20,13 +20,32 @@ export default function Home() {
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
               tools
             </h1>
+
             <h2 className="mt-6 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
               this website was built with
             </h2>
             <p className="mt-2 text-base text-zinc-600 dark:text-zinc-400">
-              HTML, CSS, TypeScript, Tailwind CSS, React, and Next.js, deployed
-              on Vercel.
+              HTML, CSS, TypeScript, Tailwind, React, and Next.js, deployed on
+              Vercel. I use{' '}
+              <Link
+                href={'https://plausible.io'}
+                className="underline underline-offset-4 hover:text-teal-500 dark:hover:text-teal-400"
+                target="_blank"
+              >
+                Plausible.io
+              </Link>{' '}
+              for privacy focused analytics.
             </p>
+
+            <h2 className="mt-4 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
+              languges
+            </h2>
+            <p className="mt-2 w-full text-base text-zinc-600 dark:text-zinc-400">
+              I am happiest working with TypeScript and JavaScript. I also have
+              years of experience writing enterprise-scale applications in Java,
+              and shorter stints writing Python, C#, and Golang professionally.
+            </p>
+
             <h2 className="mt-4 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
               deploy & automation
             </h2>
