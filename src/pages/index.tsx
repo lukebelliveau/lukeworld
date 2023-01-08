@@ -222,7 +222,7 @@ export default function Home() {
         <title>Luke Belliveau - professional software delivery</title>
         <meta
           name="description"
-          content="I'm Luke Belliveau, a software delivery consultant splitting time between Boston and Hungary. I am a full stack developer with 7 years of experience taking software products from inception to launch and beyond. If you need to get something built, I can get it done."
+          content="I'm Luke Belliveau, a software delivery specialist splitting time between Boston and Hungary. I am a full stack developer with 7 years of experience taking software products from inception to launch and beyond. If you need to get something built, I can get it done."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -253,7 +253,7 @@ export default function Home() {
             </div>
             <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
               Hi! I&apos;m Luke. I am a full stack software engineer serving as
-              a software delivery consultant.
+              a software delivery specialist.
             </p>
             <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
               With 7 years of experience writing code up and down the stack,
