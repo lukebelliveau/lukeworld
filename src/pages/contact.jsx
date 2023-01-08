@@ -53,13 +53,13 @@ export default function Contact() {
           <div className="relative rounded-2xl bg-black/[.70] py-4 px-6 sm:py-24 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:bg-transparent lg:px-8 lg:py-8">
             <div className="lg:pr-8">
               <div className="mx-auto max-w-md py-8 sm:max-w-lg lg:mx-0">
-                <h2 className="text-3xl font-bold tracking-tight text-zinc-100 dark:text-zinc-100 sm:text-4xl lg:text-inherit">
+                <h2 className="text-4xl font-bold tracking-tight text-zinc-100 dark:text-zinc-100 sm:text-5xl lg:text-inherit">
                   let&apos;s work together
                 </h2>
                 <p className="mt-4 text-lg text-zinc-200 dark:text-zinc-200 sm:mt-3 lg:text-inherit">
-                  I&apos;m currently accepting contract work, and open to part
-                  and full-time roles if we have a good fit. I would love to
-                  hear about your software delivery needs. Shoot me a message!
+                  I&apos;m currently taking contract work, and open to a part or
+                  full-time role if we have a good fit. I would love to hear
+                  about your software delivery needs. Shoot me a message!
                 </p>
                 <form
                   onSubmit={handleSubmit(onSubmit)}

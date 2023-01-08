@@ -8,7 +8,7 @@ const projects = [
   {
     name: 'ZUUT',
     description:
-      'Full-featured CAD tool for planning & executing cannabis grow operations. The canvas runs in the canvas using the Konva library, and the whole app runs on React/Redux backed by Firebase. Check out the builder to have some fun!',
+      'Full-featured computer-aided-design tool for planning & executing cannabis grow operations. Features smooth, deep canvas interactions and broad account management features.  Check out the builder to have some fun!',
     link: { href: 'https://www.zuut.co', label: 'zuut.co' },
     logo: '/images/logos/zuut.jpg',
   },
@@ -20,9 +20,19 @@ const projects = [
     logo: '/images/logos/selenium.png',
   },
   {
+    name: 'SATURATION',
+    description:
+      'Official application for world-famous boyband BROCKHAMPTON, designed to release music videos and other exclusive goodies before their general release to external platforms.  With over 10,000 users, SATURATION enjoyed a rating of 5 stars on the Google Play store, where it was active from 2017-2019.',
+    link: {
+      href: 'https://www.nuwavetech.com/prizm-gateway',
+      label: 'nuwavetech.com',
+    },
+    logo: '/images/logos/brockhampton.png',
+  },
+  {
     name: 'Prizm API Gateway',
     description:
-      'A comprehensive API Gateway built to run on Nonstop servers. I handled the development for all front-end, test automation, and deployment code - from our inception in early 2021 to our successful launch in 2022.',
+      'A comprehensive API Gateway built to run on Nonstop servers. I handled the development for all front-end, test automation, and deployment code - from our inception in early 2021 to our successful launch in 2022. The console product itself is proprietary, but the link below provies some more context on what this tool does.',
     link: {
       href: 'https://www.nuwavetech.com/prizm-gateway',
       label: 'nuwavetech.com',
@@ -53,7 +63,7 @@ export default function Projects() {
         />
       </Head>
       <SimpleLayout
-        title="wanna see what I've got?"
+        title="progress report"
         intro="While much of my professional work is proprietary, internal tooling, I've been fortunate enough to work on a few things that are accessible to anybody with an internet connection. Here's a small sample of the stuff I've built as a consultant."
       >
         <ul
