@@ -61,7 +61,7 @@ function Resume({ className }: { className?: string }) {
       end: 'Present',
     },
     {
-      company: 'NuWave Technologies',
+      company: 'NuWave Tech',
       title: 'Consultant Software Engineer',
       logo: '/images/logos/nuwave.jpg',
       start: '2021',
@@ -69,7 +69,7 @@ function Resume({ className }: { className?: string }) {
     },
     {
       company: 'Grubhub',
-      title: 'Senior Cloud Infrastructure Engineer',
+      title: 'Senior Cloud Infra Engineer',
       logo: '/images/logos/grbhb_symbol_red.png',
       start: '2018',
       end: '2020',
@@ -128,8 +128,7 @@ function Resume({ className }: { className?: string }) {
         variant="secondary"
         className="group mt-6 w-full"
       >
-        Download CV
-        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+        View CV
       </Button>
     </div>
   )
