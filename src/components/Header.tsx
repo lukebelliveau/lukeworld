@@ -77,14 +77,16 @@ function MoonIcon(props) {
 function MobileNavItem({ href, icon: Icon, children }) {
   return (
     <li>
-      <div className="flex items-center">
-        <div className="mr-1 flex h-4 w-4 shrink-0 items-center justify-center fill-black text-white dark:fill-zinc-800 sm:h-12 sm:w-12">
-          <Icon />
-        </div>
+      <div className="flex items-center justify-end">
+        <div className="flex items-center justify-between">
+          <div className="mr-1 flex h-4 w-4 shrink-0 items-center justify-center fill-black dark:fill-zinc-800">
+            <Icon />
+          </div>
 
-        <Popover.Button as={Link} href={href} className="block py-2">
-          {children}
-        </Popover.Button>
+          <Popover.Button as={Link} href={href} className="block py-2">
+            {children}
+          </Popover.Button>
+        </div>
       </div>
     </li>
   )
@@ -109,10 +111,10 @@ function MobileNavigation(props) {
         >
           <Popover.Panel
             focus
-            className="fixed right-4 top-20 z-50 w-1/2 origin-top rounded-3xl bg-white p-8 ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800"
+            className="w-4/10 fixed right-4 top-20 z-50 origin-top rounded-3xl bg-white p-4 pt-0 ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800 sm:right-16"
           >
             <nav className="mt-6">
-              <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
+              <ul className="-my-2 divide-y divide-zinc-100 text-right text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                 <MobileNavItem href="/about" icon={BookOpenIcon}>
                   Background
                 </MobileNavItem>
