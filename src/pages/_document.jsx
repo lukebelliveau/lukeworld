@@ -35,8 +35,7 @@ const modeScript = `
   }
 `
 
-const AVATAR_URL =
-  'https://drive.google.com/uc?export=view&id=19qN9U9HXC5uEzPhGIGzFnkrBfqI1sWQl'
+const AVATAR_URL = 'https://ibb.co/NxMjHbJ'
 
 export default function Document() {
   return (
