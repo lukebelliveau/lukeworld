@@ -14,11 +14,11 @@ export function SocialLink({ className, href, children, icon: Icon }) {
       href={href}
       className={clsx(
         className,
-        'group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500'
+        'group flex text-sm font-medium text-zinc-800 transition hover:text-orange-500 dark:text-zinc-200 dark:hover:text-orange-500'
       )}
       target="_blank"
     >
-      <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
+      <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-orange-500" />
       <span className="ml-1 hidden sm:block">{children}</span>
     </Link>
   )
@@ -284,7 +284,7 @@ export default function Contact() {
                   <div className="text-right sm:col-span-2">
                     <button
                       type="submit"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-teal-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                      className="inline-flex justify-center rounded-md border border-transparent bg-orange-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                     >
                       Submit
                     </button>

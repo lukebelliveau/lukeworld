@@ -29,7 +29,7 @@ export default function Home() {
               Vercel. I use{' '}
               <Link
                 href={'https://plausible.io'}
-                className="underline underline-offset-4 hover:text-teal-500 dark:hover:text-teal-400"
+                className="underline underline-offset-4 hover:text-orange-500 dark:hover:text-orange-400"
                 target="_blank"
               >
                 Plausible.io
@@ -84,7 +84,7 @@ export default function Home() {
               projects. On the{' '}
               <Link
                 href={'https://www.zuut.co/'}
-                className="underline underline-offset-4 hover:text-teal-500 dark:hover:text-teal-400"
+                className="underline underline-offset-4 hover:text-orange-500 dark:hover:text-orange-400"
                 target="_blank"
               >
                 ZUUT

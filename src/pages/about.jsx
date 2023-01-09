@@ -11,10 +11,10 @@ export function SocialLink({ className, href, children, icon: Icon }) {
     <li className={clsx(className, 'flex')}>
       <Link
         href={href}
-        className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+        className="group flex text-sm font-medium text-zinc-800 transition hover:text-orange-500 dark:text-zinc-200 dark:hover:text-orange-500"
         target="_blank"
       >
-        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
+        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-orange-500" />
         <span className="ml-4">{children}</span>
       </Link>
     </li>
@@ -56,7 +56,7 @@ export default function About() {
                 developer, check out{' '}
                 <Link
                   href={'https://www.zuut.co'}
-                  className="underline underline-offset-4 hover:text-teal-500 dark:hover:text-teal-400"
+                  className="underline underline-offset-4 hover:text-orange-500 dark:hover:text-orange-400"
                   target="_blank"
                 >
                   ZUUT
@@ -72,7 +72,7 @@ export default function About() {
                 spent a couple of years in Chicago working at{' '}
                 <Link
                   href={'https://www.thoughtworks.com/en-us'}
-                  className="underline underline-offset-4 hover:text-teal-500 dark:hover:text-teal-400"
+                  className="underline underline-offset-4 hover:text-orange-500 dark:hover:text-orange-400"
                   target="_blank"
                 >
                   ThoughtWorks
@@ -86,7 +86,7 @@ export default function About() {
                 SATURATION Android application for{' '}
                 <Link
                   href={'https://www.brckhmptn.com/'}
-                  className="underline underline-offset-4 hover:text-teal-500 dark:hover:text-teal-400"
+                  className="underline underline-offset-4 hover:text-orange-500 dark:hover:text-orange-400"
                   target="_blank"
                 >
                   BROCKHAMPTON
@@ -102,7 +102,7 @@ export default function About() {
                   href={
                     'https://bytes.grubhub.com/cloud-infrastructure-at-grubhub-94db998a898a'
                   }
-                  className="underline underline-offset-4 hover:text-teal-500 dark:hover:text-teal-400"
+                  className="underline underline-offset-4 hover:text-orange-500 dark:hover:text-orange-400"
                   target="_blank"
                 >
                   Migrating to a custom-built infrastructure platform
@@ -140,7 +140,7 @@ export default function About() {
                 rebuilt the website for{' '}
                 <Link
                   href={'https://www.selenium.dev/'}
-                  className="underline underline-offset-4 hover:text-teal-500 dark:hover:text-teal-400"
+                  className="underline underline-offset-4 hover:text-orange-500 dark:hover:text-orange-400"
                   target="_blank"
                 >
                   Selenium
@@ -152,7 +152,7 @@ export default function About() {
                 as a free agent. Since early 2021 I have worked with{' '}
                 <Link
                   href={'https://www.nuwavetech.com/'}
-                  className="underline underline-offset-4 hover:text-teal-500 dark:hover:text-teal-400"
+                  className="underline underline-offset-4 hover:text-orange-500 dark:hover:text-orange-400"
                   target="_blank"
                 >
                   Nuwave Technologies
@@ -172,7 +172,7 @@ export default function About() {
                 I also work on{' '}
                 <Link
                   href={'https://www.zuut.co'}
-                  className="underline underline-offset-4 hover:text-teal-500 dark:hover:text-teal-400"
+                  className="underline underline-offset-4 hover:text-orange-500 dark:hover:text-orange-400"
                   target="_blank"
                 >
                   ZUUT.co
@@ -201,7 +201,7 @@ export default function About() {
                 may be a good fit, I&apos;d love to{' '}
                 <Link
                   href={'/contact'}
-                  className="underline underline-offset-4 hover:text-teal-500 dark:hover:text-teal-400"
+                  className="underline underline-offset-4 hover:text-orange-500 dark:hover:text-orange-400"
                 >
                   hear from you!
                 </Link>
