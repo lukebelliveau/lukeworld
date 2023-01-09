@@ -78,14 +78,13 @@ function MobileNavItem({ href, icon: Icon, children }) {
   return (
     <li>
       <div className="flex items-center justify-end">
-        <div className="flex items-center justify-between">
-          <div className="mr-1 flex h-4 w-4 shrink-0 items-center justify-center fill-black dark:fill-zinc-800">
-            <Icon />
-          </div>
-
+        <div className="flex w-full items-center justify-between">
           <Popover.Button as={Link} href={href} className="block py-2">
             {children}
           </Popover.Button>
+          <div className="ml-4 flex h-4 w-4 shrink-0 items-center justify-center fill-black dark:fill-zinc-800">
+            <Icon />
+          </div>
         </div>
       </div>
     </li>
