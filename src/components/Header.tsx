@@ -109,10 +109,7 @@ function MobileNavigation(props) {
           leaveFrom="opacity-100 scale-100"
           leaveTo="opacity-0 scale-95"
         >
-          <Popover.Panel
-            focus
-            className="w-4/10 fixed right-4 top-20 z-50 origin-top rounded-3xl bg-white p-4 pt-0 ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800 sm:right-16"
-          >
+          <Popover.Panel className="w-4/10 fixed right-4 top-20 z-50 origin-top rounded-3xl bg-white p-4 pt-0 ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800 sm:right-16">
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-right text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                 <MobileNavItem href="/about" icon={BookOpenIcon}>
