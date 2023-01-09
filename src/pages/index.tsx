@@ -111,7 +111,7 @@ function Resume({ className }: { className?: string }) {
               </dd>
               <dt className="sr-only">Date</dt>
               <dd
-                className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
+                className="ml-auto text-xs text-zinc-500 dark:text-zinc-400"
                 aria-label={`${role.start} until ${role.end}`}
               >
                 <time dateTime={role.start}>{role.start}</time>{' '}
@@ -200,7 +200,8 @@ function Tools() {
                 alt=""
                 sizes="(min-width: 640px) 18rem, 11rem"
                 className="max-w-auto max-h-21 rounded-md object-contain"
-                fill
+                width="100"
+                height="100"
               />
             </div>
             <div className="relative flex w-full place-content-center">
