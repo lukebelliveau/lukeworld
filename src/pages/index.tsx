@@ -229,8 +229,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container className="flex-column mt-9 flex">
-        <div className="flex">
-          <div className="w-full lg:w-4/5">
+        <div className="mr-5 flex">
+          <div className="w-full">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
               let&apos;s make stuff
             </h1>
