@@ -21,7 +21,7 @@ export function Footer() {
           <Container.Inner>
             <div className="flex flex-col items-start justify-between gap-6 sm:flex-row">
               <div className="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
-                <NavLink href="/about">Background</NavLink>
+                <NavLink href="/background">Background</NavLink>
                 <NavLink href="/contact">Contact</NavLink>
                 <NavLink href="/projects">Projects</NavLink>
                 <NavLink href="/tools">Tools</NavLink>
