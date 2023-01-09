@@ -123,8 +123,8 @@ export default function Home() {
               my workflow
             </h2>
             <p className="mt-2 w-full  text-base text-zinc-600 dark:text-zinc-400">
-              Alfred, BetterTouchTool, git, iTerm, *nix && macOS, GitHub
-              Actions, Linear, Obsidian, VSCode
+              Alfred, BetterTouchTool, git, GitHub Actions, iTerm, *nix &&
+              macOS, Linear, Obsidian, VSCode
             </p>
 
             <h2 className="mt-4 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
