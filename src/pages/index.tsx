@@ -251,26 +251,26 @@ export default function Home() {
                 icon={MailIcon}
               />
             </div>
-            <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+            <p className="mt-6 text-base text-zinc-600 dark:text-zinc-200">
               Hi! I&apos;m Luke. I am a software engineer serving as a delivery
               consultant specializing in full stack web applications and
               services.
             </p>
-            <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+            <p className="mt-6 text-base text-zinc-600 dark:text-zinc-200">
               With 7 years of experience building systems at enterprise scale,
               I&apos;ve spent the last couple of years working as an independent
               consultant.
             </p>
-            <p className="mt-6 text-base font-bold text-zinc-600 dark:text-zinc-400">
+            <p className="mt-6 text-base font-bold text-zinc-600 dark:text-zinc-200">
               I enable software teams and entrepreneurs to meet their goals in
               designing, delivering, and maintaining software.
             </p>
-            <p className="mt-6 text-base  text-zinc-600 dark:text-zinc-400">
+            <p className="mt-6 text-base  text-zinc-600 dark:text-zinc-200">
               That means working with product teams to break ground on new
               Things, pairing with engineers to solve complex architecture
               problems, and everything in-between.
             </p>
-            <p className="mt-6 text-base  text-zinc-600 dark:text-zinc-400">
+            <p className="mt-6 text-base  text-zinc-600 dark:text-zinc-200">
               Most recently, my focus has been on building web applications with
               unique and challenging UI requirements. I&apos;ve enjoyed handling
               the full development cycle of applications, from pre-inception all

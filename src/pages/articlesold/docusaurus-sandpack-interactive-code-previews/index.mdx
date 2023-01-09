@@ -1,0 +1,88 @@
+import { ArticleLayout } from '../../../components/ArticleLayout'
+import { SandpackSnippet } from '../../../components/SandpackSnippet'
+import Image from 'next/image'
+import designSystem from './planetaria-design-system.png'
+import docusaurusImage from './docusaurus.jpg'
+
+export const meta = {
+  author: 'Luke Belliveau',
+  date: '2022-06-09',
+  title: 'Interactive Code Previews in Docusaurus with Sandpack',
+  description:
+    'Here was my interactive code solution when my blog was built with Docusaurus. Using this markdown-first system enabled an easy migration to Next.js earlier this year when I chose to move my blog.',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+Here was my interactive code solution when my blog was built with Docusaurus with Sandpack. Using this markdown-first system enabled an easy migration to Next.js earlier this year when I chose to move my blog, and I'm still using the `SandpackSnippet` component on this site. Super handy!
+
+_note: after writing this, I found a more robust explanation done by Juwon Owoseni at LogRocket. you can read that [here](https://blog.logrocket.com/build-interactive-blog-with-react-sandpack/)!_
+
+In my experience, the primary reason to start a programming blog is to introduce
+yourself to a handful of new technical problems, solve some of them, then forget about
+the blog in about a week. Before I forget about this blog, I'm gonna show you
+how to do this:
+
+<SandpackSnippet filename="/App.js">
+
+{`export default () => {
+  return (
+    <div>
+      <h1>Hello World</h1>
+      <p>Play with me!</p>
+    </div>
+  );
+};`}
+
+</SandpackSnippet>
+
+<br />
+
+By writing markdown (technically `.mdx`) like this:
+
+````jsx
+<SandpackSnippet>
+
+```tsx
+export default () => {
+  return (
+    <div>
+      <h1>Hello World</h1>
+      <p>Play with me!</p>
+    </div>
+  );
+};
+```
+
+</SandpackSnippet>
+````
+
+### Inspiration & Alternatives
+
+It's important to me that the markdown files I write these blogs in are
+relatively portable - ideally if I get sick of Docusaurus, I can copy the very
+[`.mdx`](https://mdxjs.com/) file I'm writing in now, and take it somewhere else. This ruled out the approach I see in a lot of places,
+where blogs will render an `iframe` to embed a code editor hosted on StackBlitz, CodeSandbox, or somewhere else (like this):
+
+```jsx
+<iframe
+  src="https://stackblitz.com/edit/react-ts-ktczzd?embed=1&file=App.tsx"
+  width="100%"
+  height="400px"
+/>
+```
+
+<iframe
+  src="https://stackblitz.com/edit/react-ts-ktczzd?embed=1&file=App.tsx"
+  width="100%"
+  height="400px"
+/>
+
+I've more or less achieved this, as long as CodeSandbox (the makers of Sandpack) don't disappear any time soon.
+
+While it's true that the Sandpack editor won't show up without a connection to CodeSandbox servers, I get to keep all of the code with me, living in or alongside
+the markdown files.
+
+This approach was inspired by the ReactJS docs. (At this time of writing they're
+the beta docs for Hooks, with loads of interactive examples)
+
