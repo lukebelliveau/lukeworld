@@ -25,6 +25,7 @@ interface CardProps extends PropsWithChildren {
   href?: string
   className?: string
   decorate?: boolean
+  dateTime?: string
 }
 
 export function Card({
@@ -90,6 +91,7 @@ Card.Eyebrow = function CardEyebrow({
   decorate = false,
   className,
   children,
+  dateTime,
   ...props
 }: CardProps) {
   return (
@@ -99,6 +101,7 @@ Card.Eyebrow = function CardEyebrow({
         'relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500',
         decorate && 'pl-3.5'
       )}
+      dateTime={dateTime}
       {...props}
     >
       {decorate && (
