@@ -123,7 +123,7 @@ function Resume({ className }: { className?: string }) {
         ))}
       </ol>
       <Button
-        href="/files/resume.pdf"
+        href="/files/Luke_Belliveau_CV.pdf"
         target="_blank"
         variant="secondary"
         className="group mt-6 w-full"
