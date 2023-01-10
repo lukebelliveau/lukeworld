@@ -194,7 +194,7 @@ const toolList = [
 
 function Tools() {
   return (
-    <div className="mt-12 flex place-content-center justify-center sm:mt-20">
+    <div className="mt-12 flex place-content-center justify-center sm:mt-8">
       <div className="xl:space-around grid grid-cols-4 gap-4 sm:gap-14 md:grid-cols-6 xl:flex xl:grid-cols-12 xl:justify-center xl:gap-3">
         {toolList.map((tool, imageIndex) => (
           <div
@@ -299,6 +299,79 @@ export default function Home() {
           </div>
         </div>
       </Container>
+      <Container className=" flex-column mt-12 mt-9 flex">
+        <div className="mx-auto flex flex max-w-xl place-content-center gap-y-20 lg:max-w-none lg:grid-cols-2">
+          <div className="space-y-10">
+            <Testimonials />
+          </div>
+        </div>
+      </Container>
+    </>
+  )
+}
+
+// const testimonialList = [
+//   {
+//     label: `"Koolfire", Founder, ZUUT`,
+//     message:
+//       "When I set out to make ZUUT, I didn't know where to start. Luke was the perfect technical partner to help me figure out the product's direction, hire a team of designers and engineers, and get an MVP built - frequently contributing useful feature ideas of his own. Luke got our app built with a high standard of quality and attention to detail.",
+//   },
+//   {
+//     label: `Kurtis, Creator, Devil's Dice Game`,
+//     message: `Luke worked with me from the start to create this cross-platform mobile game. He helped me find a great designer to draw our our mockups, built the application, handled publishing to Apple & Google's storefronts, and was instrumental in helping me find a developer for long-term maintenance of the application.`,
+//   },
+//   {
+//     label: `Kevin Doan & Dom McLennon of BROCKHAMPTON`,
+//     message: `Insane turnaround ... I'm f*****g amazed`,
+//   },
+// ]
+const Testimonials = () => {
+  return (
+    <>
+      <h2 className="text-center text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl lg:text-left">
+        Words from collaborators
+      </h2>
+      <div className="flex flex-col text-sm lg:flex-row">
+        <div className="m-2 flex flex-1 flex-col justify-between bg-zinc-50 p-4 dark:bg-zinc-800/50 sm:rounded-2xl">
+          <p className="italic text-zinc-600 dark:text-zinc-200">
+            &quot;When I set out to make ZUUT, I didn&apos;t know where to
+            start. Luke was the perfect technical partner to help me figure out
+            the product&apos;s direction, hire a team of designers and
+            engineers, and get an MVP built - frequently contributing useful
+            feature ideas of his own. Luke got our app built with a high
+            standard of quality and attention to detail.&quot;
+          </p>
+          <span className="mt-6 font-bold italic">
+            &quot;Koolfire&quot;, founder, ZUUT
+          </span>
+        </div>
+        <div className="m-2 flex flex-1 flex-col justify-between bg-zinc-50 p-4 dark:bg-zinc-800/50 sm:rounded-2xl">
+          <p className="italic text-zinc-600 dark:text-zinc-200">
+            &quot;Luke worked with me from the start to create this
+            cross-platform mobile game. He helped me find a great designer to
+            draw our our mockups, built the application, handled publishing to
+            Apple & Google&apos;s storefronts, and was instrumental in helping
+            me find a developer for long-term maintenance of the
+            application.&quot;
+          </p>
+          <span className="mt-6 font-bold italic">
+            Kurtis, creator, Devil&apos;s Dice Game
+          </span>
+        </div>
+        <div className="m-2 flex flex-1 flex-col justify-between bg-zinc-50 p-4 dark:bg-zinc-800/50 sm:rounded-2xl">
+          <div className="flex h-full flex-col justify-center">
+            <p className="italic text-zinc-600 dark:text-zinc-200">
+              Awesome ... insane turnaround!!
+            </p>
+            <span className="">- Kevin Doan, creative direction</span>
+            <p className="mt-6 italic text-zinc-600 dark:text-zinc-200">
+              I&apos;m f*****g amazed.
+            </p>
+            <span className="">- Dom McLennon, lead vocalist</span>
+          </div>
+          <span className="mt-6 font-bold italic">BROCKHAMPTON</span>
+        </div>
+      </div>
     </>
   )
 }
