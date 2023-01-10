@@ -190,7 +190,7 @@ const Testimonials = () => {
         Words from collaborators
       </h2>
       <div className="lg-h-6 m-0 mt-3 flex flex-col text-sm dark:text-zinc-100 lg:flex-row">
-        <div className="m-2 flex flex-1 flex-col justify-between rounded-2xl bg-zinc-100 p-4 shadow-md dark:bg-zinc-800/50">
+        <div className="m-2 flex flex-1 flex-col justify-between rounded-2xl bg-zinc-50 p-4 shadow-md dark:bg-zinc-800/50">
           <p className="italic text-zinc-600 dark:text-zinc-200">
             &quot;When I set out to make ZUUT, I didn&apos;t know where to
             start. Luke was the perfect technical partner to help me figure out
@@ -207,7 +207,7 @@ const Testimonials = () => {
             &quot;Koolfire&quot;, Founder, ZUUT
           </span>
         </div>
-        <div className="m-2 my-4 flex flex-1 flex-col justify-between rounded-2xl bg-zinc-100 p-4 shadow-md dark:bg-zinc-800/50 lg:my-2">
+        <div className="m-2 my-4 flex flex-1 flex-col justify-between rounded-2xl bg-zinc-50 p-4 shadow-md dark:bg-zinc-800/50 lg:my-2">
           <p className="italic text-zinc-600 dark:text-zinc-200">
             &quot;Luke worked with me from the start to create this
             cross-platform mobile game. He helped me find a great designer to
@@ -224,7 +224,7 @@ const Testimonials = () => {
             Kurtis Bryant, Creator, Devil&apos;s Dice Game
           </span>
         </div>
-        <div className="m-2 flex flex-1 flex-col justify-between justify-between rounded-2xl rounded-2xl bg-zinc-200 bg-zinc-100 p-4 p-4 shadow-md dark:bg-zinc-800/50">
+        <div className="m-2 flex flex-1 flex-col justify-between rounded-2xl bg-zinc-50 p-4 shadow-md dark:bg-zinc-800/50">
           <div className="flex h-full flex-col justify-center md:flex-row md:justify-around lg:flex-col">
             <div className="flex flex-col">
               <p className="font-bold italic text-zinc-600 dark:text-zinc-200">
