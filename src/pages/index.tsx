@@ -355,7 +355,7 @@ const Testimonials = () => {
             application.&quot;
           </p>
           <span className="mt-6 font-bold italic">
-            Kurtis, creator, Devil&apos;s Dice Game
+            Kurtis Bryant, creator, Devil&apos;s Dice Game
           </span>
         </div>
         <div className="m-2 flex flex-1 flex-col justify-between bg-zinc-50 p-4 dark:bg-zinc-800/50 sm:rounded-2xl">
