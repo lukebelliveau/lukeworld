@@ -27,7 +27,7 @@ const projects = [
   {
     name: 'Selenium.dev',
     description:
-      'Given a set of mockups, I delivered a speedy static website for Selenium, a popular browser automation tool. Built with Jekyll and Hugo - under time and budget.',
+      'Given a set of mockups, I delivered a speedy static website for Selenium, a popular browser automation tool. Built with Jekyll and Hugo.',
     link: { href: 'https://www.selenium.dev', label: 'selenium.dev' },
     logo: '/images/logos/selenium.png',
     year: '2019',
