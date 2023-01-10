@@ -242,7 +242,7 @@ export default function Home() {
       </Head>
       <Container className="flex-column space-between mt-9 flex">
         <div className="flex">
-          <div className="w-full basis-full basis-1/2 lg:basis-7/12 xl:basis-9/12">
+          <div className="w-full basis-full lg:basis-1/2 lg:basis-7/12 xl:basis-9/12">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
               let&apos;s make stuff
             </h1>
@@ -291,7 +291,7 @@ export default function Home() {
               tools. Here are some of mine:
             </p>
           </div>
-          <div className="mt-32 hidden w-full basis-1/2 flex-col place-content-center sm:basis-11/12 lg:block lg:basis-6/12 xl:basis-5/12 2xl:basis-4/12">
+          <div className="mt-32 hidden w-full basis-1/2 flex-col place-content-center lg:block lg:basis-6/12 xl:basis-5/12 2xl:basis-4/12">
             <Resume className="ml-4 block" />
           </div>
         </div>
