@@ -189,7 +189,7 @@ const Testimonials = () => {
       <h2 className="text-center text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl lg:text-left">
         Words from collaborators
       </h2>
-      <div className="lg-h-6 m-0 mt-3 flex flex-col text-sm lg:flex-row">
+      <div className="lg-h-6 m-0 mt-3 flex flex-col text-sm dark:text-zinc-100 lg:flex-row">
         <div className="m-2 flex flex-1 flex-col justify-between rounded-2xl bg-zinc-100 p-4 shadow-md dark:bg-zinc-800/50">
           <p className="italic text-zinc-600 dark:text-zinc-200">
             &quot;When I set out to make ZUUT, I didn&apos;t know where to
