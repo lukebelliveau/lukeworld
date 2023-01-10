@@ -297,16 +297,16 @@ export default function Home() {
         </div>
         <Tools />
       </Container>
-      <Container className="mt-12 md:mt-28 lg:hidden">
+      <Container className="mt-12 md:mt-16 lg:hidden">
         <div className="mx-auto flex flex max-w-xl place-content-center gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="space-y-10">
             <Resume className="lg:hidden" />
           </div>
         </div>
       </Container>
-      <Container className=" flex-column mt-12 mt-9 flex">
+      <Container className="flex-column mt-16 flex">
         <div className="mx-auto flex flex max-w-xl place-content-center gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="space-y-10">
+          <div className="">
             <Testimonials />
           </div>
         </div>
@@ -315,66 +315,63 @@ export default function Home() {
   )
 }
 
-// const testimonialList = [
-//   {
-//     label: `"Koolfire", Founder, ZUUT`,
-//     message:
-//       "When I set out to make ZUUT, I didn't know where to start. Luke was the perfect technical partner to help me figure out the product's direction, hire a team of designers and engineers, and get an MVP built - frequently contributing useful feature ideas of his own. Luke got our app built with a high standard of quality and attention to detail.",
-//   },
-//   {
-//     label: `Kurtis, Creator, Devil's Dice Game`,
-//     message: `Luke worked with me from the start to create this cross-platform mobile game. He helped me find a great designer to draw our our mockups, built the application, handled publishing to Apple & Google's storefronts, and was instrumental in helping me find a developer for long-term maintenance of the application.`,
-//   },
-//   {
-//     label: `Kevin Doan & Dom McLennon of BROCKHAMPTON`,
-//     message: `Insane turnaround ... I'm f*****g amazed`,
-//   },
-// ]
 const Testimonials = () => {
   return (
     <>
       <h2 className="text-center text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl lg:text-left">
         Words from collaborators
       </h2>
-      <div className="flex flex-col text-sm lg:flex-row">
-        <div className="m-2 flex flex-1 flex-col justify-between bg-zinc-50 p-4 dark:bg-zinc-800/50 sm:rounded-2xl">
+      <div className="lg-h-6 m-0 flex flex-col text-sm lg:flex-row">
+        <div className="m-2 flex flex-1 flex-col justify-between rounded-2xl bg-zinc-100 p-4 shadow-md dark:bg-zinc-800/50">
           <p className="italic text-zinc-600 dark:text-zinc-200">
             &quot;When I set out to make ZUUT, I didn&apos;t know where to
             start. Luke was the perfect technical partner to help me figure out
             the product&apos;s direction, hire a team of designers and
             engineers, and get an MVP built - frequently contributing useful
-            feature ideas of his own. Luke got our app built with a high
-            standard of quality and attention to detail.&quot;
+            feature ideas of his own.{' '}
+            <span className="font-bold">
+              Luke got our app built with a high standard of quality and
+              attention to detail.
+            </span>
+            &quot;
           </p>
-          <span className="mt-6 font-bold italic">
+          <span className="mt-6 font-bold">
             &quot;Koolfire&quot;, founder, ZUUT
           </span>
         </div>
-        <div className="m-2 flex flex-1 flex-col justify-between bg-zinc-50 p-4 dark:bg-zinc-800/50 sm:rounded-2xl">
+        <div className="m-2 flex flex-1 flex-col justify-between rounded-2xl bg-zinc-100 p-4 shadow-md dark:bg-zinc-800/50">
           <p className="italic text-zinc-600 dark:text-zinc-200">
             &quot;Luke worked with me from the start to create this
             cross-platform mobile game. He helped me find a great designer to
             draw our our mockups, built the application, handled publishing to
             Apple & Google&apos;s storefronts, and was instrumental in helping
-            me find a developer for long-term maintenance of the
-            application.&quot;
+            me find a developer for long-term maintenance of the application.{' '}
+            <span className="font-bold">
+              Without Luke, I&apos;m not sure if I ever would have gotten this
+              done.
+            </span>
+            &quot;{' '}
           </p>
-          <span className="mt-6 font-bold italic">
+          <span className="mt-6 font-bold">
             Kurtis Bryant, creator, Devil&apos;s Dice Game
           </span>
         </div>
-        <div className="m-2 flex flex-1 flex-col justify-between bg-zinc-50 p-4 dark:bg-zinc-800/50 sm:rounded-2xl">
-          <div className="flex h-full flex-col justify-center">
-            <p className="italic text-zinc-600 dark:text-zinc-200">
-              Awesome ... insane turnaround!!
-            </p>
-            <span className="">- Kevin Doan, creative direction</span>
-            <p className="mt-6 italic text-zinc-600 dark:text-zinc-200">
-              I&apos;m f*****g amazed.
-            </p>
-            <span className="">- Dom McLennon, lead vocalist</span>
+        <div className="m-2 flex flex-1 flex-col justify-between justify-between rounded-2xl rounded-2xl bg-zinc-200 bg-zinc-100 p-4 p-4 shadow-md dark:bg-zinc-800/50">
+          <div className="flex h-full flex-col justify-center md:flex-row md:justify-around lg:flex-col">
+            <div className="flex flex-col">
+              <p className="font-bold italic text-zinc-600 dark:text-zinc-200">
+                I&apos;m f*****g amazed.
+              </p>
+              <span className="">- Dom McLennon, lead vocalist</span>
+            </div>
+            <div className="flex flex-col">
+              <p className="italic text-zinc-600 dark:text-zinc-200">
+                Awesome ... insane turnaround!!
+              </p>
+              <span className="">- Kevin Doan, creative direction</span>
+            </div>
           </div>
-          <span className="mt-6 font-bold italic">BROCKHAMPTON</span>
+          <span className="mt-6 font-bold">BROCKHAMPTON</span>
         </div>
       </div>
     </>
