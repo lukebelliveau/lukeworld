@@ -24,7 +24,7 @@ export default function Home() {
             <h2 className="mt-6 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
               this website was built with
             </h2>
-            <p className="mt-2 text-base text-zinc-600 dark:text-zinc-400">
+            <p className="mt-2 text-base text-zinc-600 dark:text-zinc-200">
               HTML, CSS, TypeScript, Tailwind, React, and Next.js, deployed on
               Vercel. I use{' '}
               <Link
@@ -40,7 +40,7 @@ export default function Home() {
             <h2 className="mt-4 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
               languges
             </h2>
-            <p className="mt-2 w-full text-base text-zinc-600 dark:text-zinc-400">
+            <p className="mt-2 w-full text-base text-zinc-600 dark:text-zinc-200">
               I am happiest working with TypeScript and JavaScript. I also have
               years of experience writing enterprise-scale applications in Java,
               and shorter stints writing Python, C#, and Golang professionally.
@@ -49,7 +49,7 @@ export default function Home() {
             <h2 className="mt-4 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
               deploy & automation
             </h2>
-            <p className="mt-2 w-full text-base text-zinc-600 dark:text-zinc-400">
+            <p className="mt-2 w-full text-base text-zinc-600 dark:text-zinc-200">
               I have deep experience working with Jenkins & Spinnaker,
               particularly instances running on EC2 servers. I&apos;ve also
               worked with GoCD and Gitlab CI at enterprise scale. For smaller
@@ -63,7 +63,7 @@ export default function Home() {
             <h2 className="mt-4 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
               testing
             </h2>
-            <p className="mt-2 w-full text-base text-zinc-600 dark:text-zinc-400">
+            <p className="mt-2 w-full text-base text-zinc-600 dark:text-zinc-200">
               A test-first mentality is a cornerstone of my practice. Most
               recently, I&apos;ve been loving Vitest for JavaScript testing. In
               the JS world, I&apos;ve had deep experience with Jest, Mocha,
@@ -75,7 +75,7 @@ export default function Home() {
             <h2 className="mt-4 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
               client-side
             </h2>
-            <p className="mt-2 w-full text-base text-zinc-600 dark:text-zinc-400">
+            <p className="mt-2 w-full text-base text-zinc-600 dark:text-zinc-200">
               I&apos;ve loved working with React since it converted this
               aspiring backend engineer into a V8 lover in 2016. Though I find
               React&apos;s own Context API and Zustand suitable and pleasant to
@@ -96,7 +96,7 @@ export default function Home() {
             <h2 className="mt-4 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
               server-side
             </h2>
-            <p className="mt-2 w-full text-base text-zinc-600 dark:text-zinc-400">
+            <p className="mt-2 w-full text-base text-zinc-600 dark:text-zinc-200">
               After building a few Node.js data pipelines for Kroger, I got deep
               server-side experience working on the Cloud Infrastructure team at
               GrubHub. I worked on our Java/Spring Boot frameworks, which were
@@ -108,7 +108,7 @@ export default function Home() {
               load-balancing, API gateway, and service mesh/discovery
               architecture.
             </p>
-            <p className="mt-2 w-full text-base text-zinc-600 dark:text-zinc-400">
+            <p className="mt-2 w-full text-base text-zinc-600 dark:text-zinc-200">
               In recent years my client&apos;s solutions have required less
               complexity, sometimes going for an EC2/Docker solution, and other
               times going for serverless functions on AWS Lambda or Digital
@@ -122,7 +122,7 @@ export default function Home() {
             <h2 className="mt-4 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
               my workflow
             </h2>
-            <p className="mt-2 w-full  text-base text-zinc-600 dark:text-zinc-400">
+            <p className="mt-2 w-full  text-base text-zinc-600 dark:text-zinc-200">
               Alfred, BetterTouchTool, git, GitHub Actions, iTerm, *nix &&
               macOS, Linear, Obsidian, VSCode
             </p>
@@ -130,7 +130,7 @@ export default function Home() {
             <h2 className="mt-4 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
               misc
             </h2>
-            <p className="mt-2 w-full  text-base text-zinc-600 dark:text-zinc-400">
+            <p className="mt-2 w-full  text-base text-zinc-600 dark:text-zinc-200">
               Akai MPK Mini, CAPiTA DOA, Köves Telecaster, Logic Pro, Yamaha
               P-45, ZSA Moonlander
             </p>
