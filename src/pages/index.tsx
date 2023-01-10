@@ -188,7 +188,7 @@ const toolList = [
 function Tools() {
   return (
     <div className="mt-16 flex place-content-center justify-center sm:mt-20">
-      <div className="xl:space-around grid grid-cols-4 gap-4 sm:gap-14 md:grid-cols-6 xl:flex xl:grid-cols-12 xl:justify-center xl:gap-4">
+      <div className="xl:space-around grid grid-cols-4 gap-4 sm:gap-14 md:grid-cols-6 xl:flex xl:grid-cols-12 xl:justify-center xl:gap-3">
         {toolList.map((tool, imageIndex) => (
           <div
             key={tool.image}
