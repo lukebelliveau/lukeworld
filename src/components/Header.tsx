@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Popover, Transition } from '@headlessui/react'
 import {
+  ArrowTopRightOnSquareIcon,
   BoltIcon,
   BookOpenIcon,
   ChatBubbleBottomCenterIcon,
@@ -168,6 +169,17 @@ function DesktopNavigation(props) {
         <NavItem href="/tools">Tools</NavItem>
       </ul>
     </nav>
+  )
+}
+
+function CVButton() {
+  return (
+    <Link href="/files/Luke_Belliveau_CV.pdf" aria-label="View CV">
+      <div className="group flex rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20">
+        CV
+        <ArrowTopRightOnSquareIcon className=" ml-2 h-6 w-6 stroke-zinc-500 p-0.5 transition dark:block" />
+      </div>
+    </Link>
   )
 }
 
@@ -410,15 +422,26 @@ export function Header() {
                   </AvatarContainer>
                 )}
               </div>
-              <div className="flex flex-1 justify-end md:justify-center">
-                <MobileNavigation className="pointer-events-auto md:hidden" />
-                {/* <NewMobileNavigation /> */}
-                <DesktopNavigation className="pointer-events-auto hidden md:block" />
-              </div>
-              <div className="flex justify-end md:flex-1">
-                <div className="pointer-events-auto">
+              <div className="flex justify-end md:hidden md:flex-1">
+                <div className="pointer-events-auto mr-4">
                   <ModeToggle />
                 </div>
+                <div className="pointer-events-auto">
+                  <CVButton />
+                </div>
+              </div>
+
+              <MobileNavigation className="pointer-events-auto md:hidden" />
+              <DesktopNavigation className="pointer-events-auto hidden md:block" />
+
+              <div className="hidden justify-end md:flex md:flex-1">
+                <div className="pointer-events-auto mr-3">
+                  <ModeToggle />
+                </div>
+                <div className="pointer-events-auto mr-3">
+                  <CVButton />
+                </div>
+                <div className="pointer-events-auto"></div>
               </div>
             </div>
           </Container>
