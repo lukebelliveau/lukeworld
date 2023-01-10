@@ -54,13 +54,6 @@ function SocialLink({ icon: Icon, ...props }) {
 function Resume({ className }: { className?: string }) {
   let resume = [
     {
-      company: 'ZUUT.co',
-      title: 'Co-founder & CTO',
-      logo: '/images/logos/zuut.jpg',
-      start: '2021',
-      end: 'Present',
-    },
-    {
       company: 'NuWave Tech',
       title: 'Consultant Software Engineer',
       logo: '/images/logos/nuwave.jpg',
@@ -68,15 +61,29 @@ function Resume({ className }: { className?: string }) {
       end: 'Present',
     },
     {
+      company: 'ZUUT.co',
+      title: 'Technical Partner',
+      logo: '/images/logos/zuut.jpg',
+      start: '2020',
+      end: 'Present',
+    },
+    {
       company: 'Grubhub',
-      title: 'Senior Cloud Infra Engineer',
+      title: 'Senior Cloud Infrastructure Engineer',
       logo: '/images/logos/grbhb_symbol_red.png',
       start: '2018',
       end: '2020',
     },
     {
       company: 'ThoughtWorks',
-      title: 'Software Engineer',
+      title: 'Senior Software Engineer',
+      logo: '/images/logos/thoughtworks.jpg',
+      start: '2016',
+      end: '2018',
+    },
+    {
+      company: 'ThoughtWorks',
+      title: 'Associate Software Engineer',
       logo: '/images/logos/thoughtworks.jpg',
       start: '2016',
       end: '2018',
@@ -87,7 +94,7 @@ function Resume({ className }: { className?: string }) {
     <div
       className={clsx(
         className,
-        'flex-initial rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40'
+        'flex-initial rounded-2xl border border-zinc-100 p-5 dark:border-zinc-700/40'
       )}
     >
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
@@ -187,7 +194,7 @@ const toolList = [
 
 function Tools() {
   return (
-    <div className="mt-16 flex place-content-center justify-center sm:mt-20">
+    <div className="mt-12 flex place-content-center justify-center sm:mt-20">
       <div className="xl:space-around grid grid-cols-4 gap-4 sm:gap-14 md:grid-cols-6 xl:flex xl:grid-cols-12 xl:justify-center xl:gap-3">
         {toolList.map((tool, imageIndex) => (
           <div
@@ -279,13 +286,13 @@ export default function Home() {
               tools. Here are some of mine:
             </p>
           </div>
-          <div className="flex flex-col place-content-center">
-            <Resume className="ml-4 hidden lg:block" />
+          <div className="mt-32 hidden w-full flex-col place-content-center lg:block">
+            <Resume className="ml-4 block" />
           </div>
         </div>
         <Tools />
       </Container>
-      <Container className="mt-16 md:mt-28 lg:hidden">
+      <Container className="mt-12 md:mt-28 lg:hidden">
         <div className="mx-auto flex flex max-w-xl place-content-center gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="space-y-10">
             <Resume className="lg:hidden" />
