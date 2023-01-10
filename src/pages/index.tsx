@@ -78,7 +78,7 @@ function Resume({ className }: { className?: string }) {
       company: 'ThoughtWorks',
       title: 'Senior Software Engineer',
       logo: '/images/logos/thoughtworks.jpg',
-      start: '2016',
+      start: '2018',
       end: '2018',
     },
     {
@@ -298,14 +298,14 @@ export default function Home() {
         <Tools />
       </Container>
       <Container className="mt-12 md:mt-16 lg:hidden">
-        <div className="mx-auto flex flex max-w-xl place-content-center gap-y-20 lg:max-w-none lg:grid-cols-2">
+        <div className="mx-auto flex max-w-xl place-content-center gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="space-y-10">
             <Resume className="lg:hidden" />
           </div>
         </div>
       </Container>
-      <Container className="flex-column mt-16 flex">
-        <div className="mx-auto flex flex max-w-xl place-content-center gap-y-20 lg:max-w-none lg:grid-cols-2">
+      <Container className="flex-column mt-8 flex lg:mt-16">
+        <div className="mx-auto flex max-w-xl place-content-center gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="">
             <Testimonials />
           </div>
@@ -321,7 +321,7 @@ const Testimonials = () => {
       <h2 className="text-center text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl lg:text-left">
         Words from collaborators
       </h2>
-      <div className="lg-h-6 m-0 flex flex-col text-sm lg:flex-row">
+      <div className="lg-h-6 m-0 mt-3 flex flex-col text-sm lg:flex-row">
         <div className="m-2 flex flex-1 flex-col justify-between rounded-2xl bg-zinc-100 p-4 shadow-md dark:bg-zinc-800/50">
           <p className="italic text-zinc-600 dark:text-zinc-200">
             &quot;When I set out to make ZUUT, I didn&apos;t know where to
@@ -336,10 +336,10 @@ const Testimonials = () => {
             &quot;
           </p>
           <span className="mt-6 font-bold">
-            &quot;Koolfire&quot;, founder, ZUUT
+            &quot;Koolfire&quot;, Founder, ZUUT
           </span>
         </div>
-        <div className="m-2 flex flex-1 flex-col justify-between rounded-2xl bg-zinc-100 p-4 shadow-md dark:bg-zinc-800/50">
+        <div className="m-2 my-4 flex flex-1 flex-col justify-between rounded-2xl bg-zinc-100 p-4 shadow-md dark:bg-zinc-800/50 lg:my-2">
           <p className="italic text-zinc-600 dark:text-zinc-200">
             &quot;Luke worked with me from the start to create this
             cross-platform mobile game. He helped me find a great designer to
@@ -353,7 +353,7 @@ const Testimonials = () => {
             &quot;{' '}
           </p>
           <span className="mt-6 font-bold">
-            Kurtis Bryant, creator, Devil&apos;s Dice Game
+            Kurtis Bryant, Creator, Devil&apos;s Dice Game
           </span>
         </div>
         <div className="m-2 flex flex-1 flex-col justify-between justify-between rounded-2xl rounded-2xl bg-zinc-200 bg-zinc-100 p-4 p-4 shadow-md dark:bg-zinc-800/50">
