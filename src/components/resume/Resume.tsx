@@ -65,7 +65,7 @@ export function Resume({ className }: { className?: string }) {
       company: 'ThoughtWorks',
       title: 'Senior Software Engineer',
       logo: '/images/logos/thoughtworks.jpg',
-      start: '2018',
+      start: '2017',
       end: '2018',
     },
     {
@@ -73,7 +73,7 @@ export function Resume({ className }: { className?: string }) {
       title: 'Associate Software Engineer',
       logo: '/images/logos/tw-white.png',
       start: '2016',
-      end: '2018',
+      end: '2017',
     },
   ]
 
