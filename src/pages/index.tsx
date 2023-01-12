@@ -179,6 +179,9 @@ export default function Home() {
             <Testimonials />
           </div>
         </div>
+        <a rel="me" href="https://hachyderm.io/@luuuuuuukee" className="hidden">
+          Mastodon
+        </a>
       </Container>
     </>
   )
