@@ -250,7 +250,8 @@ function Avatar({ large = false, className = '', ...props }) {
     >
       <Image
         src="/images/avatar.jpg"
-        alt=""
+        alt="Headshot of Luke"
+        aria-label="Go to the homepage"
         sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
           'rounded-full bg-zinc-100 object-cover dark:bg-zinc-800',
@@ -259,7 +260,6 @@ function Avatar({ large = false, className = '', ...props }) {
         priority
         width="50"
         height="50"
-        // fill
       />
     </Link>
   )

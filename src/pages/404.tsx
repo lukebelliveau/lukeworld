@@ -21,6 +21,7 @@ const Page404 = () => {
           <Link href="/">
             <Image
               src={'/images/daisysage.jpg'}
+              aria-label="Go to homepage"
               alt="Luke's beloved miniature dachshunds, Daisy & Sage."
               sizes="(min-width: 1024px) 32rem, 20rem"
               className="aspect-square rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800 lg:aspect-auto"

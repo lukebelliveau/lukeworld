@@ -77,7 +77,8 @@ function Tools() {
             <div className="relative inset-0 flex h-full w-full place-content-center">
               <Image
                 src={tool.image}
-                alt=""
+                alt={`Logo for ${tool.label}`}
+                aria-label={`Logo for ${tool.label}`}
                 sizes="(min-width: 640px) 18rem, 11rem"
                 className="max-w-auto max-h-21 rounded-md object-contain"
                 width="100"

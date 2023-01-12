@@ -62,8 +62,9 @@ export default function Contact() {
               <Image
                 className="h-56 w-full rounded-2xl object-cover lg:absolute lg:h-full "
                 src={'/images/iceland.jpeg'}
-                alt=""
                 fill
+                aria-label="Luke in Iceland, 2018"
+                alt="Luke in Iceland, 2018"
               />
             </div>
           </div>
