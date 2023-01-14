@@ -226,7 +226,7 @@ const Testimonials = () => {
             Kurtis Bryant, Creator, Devil&apos;s Dice Game
           </span>
         </div>
-        <div className="m-2 flex flex-1 flex-col justify-between rounded-2xl bg-zinc-50 p-4 shadow-md dark:bg-zinc-800/50">
+        {/* <div className="m-2 flex flex-1 flex-col justify-between rounded-2xl bg-zinc-50 p-4 shadow-md dark:bg-zinc-800/50">
           <div className="flex h-full flex-col justify-center md:flex-row md:justify-around lg:flex-col">
             <div className="flex flex-col">
               <p className="font-bold italic text-zinc-600 dark:text-zinc-200">
@@ -242,7 +242,7 @@ const Testimonials = () => {
             </div>
           </div>
           <span className="mt-6 font-bold">BROCKHAMPTON</span>
-        </div>
+        </div> */}
       </div>
     </>
   )
