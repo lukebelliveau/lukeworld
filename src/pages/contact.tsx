@@ -52,7 +52,7 @@ export default function Contact() {
         <title>About - Luke Belliveau</title>
         <meta
           name="description"
-          content="Contact page for Luke Belliveau. Luke Belliveau is a software delivery consultant specializing in full stack web applications and services."
+          content="Contact Luke to get full stack web applications built. Luke Belliveau is a software delivery consultant specializing in full stack web applications and services."
         />
       </Head>
       <Container className="mt-16 sm:mt-20">
