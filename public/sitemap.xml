@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.lukebelliveau.dev</loc>
+    <loc>https://www.lukebelliveau.dev/</loc>
+    <lastmod>2023-01-15</lastmod>
   </url>
   <url>
-    <loc>https://www.lukebelliveau.dev/background</loc>
+    <loc>https://www.lukebelliveau.dev/background/</loc>
+    <lastmod>2023-01-15</lastmod>
   </url>
    <url>
-    <loc>https://www.lukebelliveau.dev/contact</loc>
+    <loc>https://www.lukebelliveau.dev/contact/</loc>
+    <lastmod>2023-01-15</lastmod>
   </url>
    <url>
-    <loc>https://www.lukebelliveau.dev/projects</loc>
+    <loc>https://www.lukebelliveau.dev/projects/</loc>
+    <lastmod>2023-01-15</lastmod>
   </url>
    <url>
-    <loc>https://www.lukebelliveau.dev/tools</loc>
+    <loc>https://www.lukebelliveau.dev/tools/</loc>
+    <lastmod>2023-01-15</lastmod>
   </url>
 </urlset>
