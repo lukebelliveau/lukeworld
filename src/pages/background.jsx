@@ -28,7 +28,7 @@ export default function About() {
         <title>About - Luke Belliveau</title>
         <meta
           name="description"
-          content="About page for Luke Belliveau. Luke Belliveau is a software delivery consultant specializing in full stack web applications and services. Let's build something together."
+          content="Background page for Luke Belliveau, summarizing his skills, experience, and career journey. Luke Belliveau is a software delivery consultant specializing in full stack web applications and services. Let's build something together."
         />
       </Head>
       <Container className="mt-16 sm:mt-36">
