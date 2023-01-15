@@ -1,0 +1,173 @@
+import { ArticleLayout } from '../../../components/ArticleLayout'
+import { Spacer } from '../../../components/blog/Spacer'
+
+export const meta = {
+  author: 'Luke Belliveau',
+  date: '2023-01-14',
+  title: 'Publishing a Website with TypeScript, Next.js and Vercel',
+  subtitle: 'Making this Website: Part 1',
+  description:
+    'The first in a series of blog posts about how I made this blog that hosts these blog posts. Covers ',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+Welcome! This is a brief tutorial about how to create a simple TypeScript website with Next.js and publish it to Vercel. This is not a deep dive - we won't be digging into complex routing features or making the perfect layout with CSS. This is more of a checklist with steps and resources, with plenty of room for your own creativity & exploration to come through. We'll cover:
+
+- Installing Next.js, local development
+- Pages, linking, routing
+- Deploying to Vercel
+
+#### Topics covered
+- Installing Next.js and setting up for local development
+- Next.js Page files
+- Next.js `<Link>`, `<Head>` components
+- Deploying to Vercel
+
+#### Prerequisites
+Familiarity with:
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://beta.reactjs.org/)
+
+You should have installed:
+- [npm](https://www.npmjs.com/)
+- [git](https://git-scm.com/) (and have some familiarity with GitHub)
+
+#### Primary Resources
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Vercel Documentation](https://vercel.com/docs)
+
+## Installation
+Open your terminal of choice and run the following command to create a new Next.js project in your current directory:
+
+`~/ROBOT $ npx create-next-app@latest`
+
+
+You'll go through some choices here, my preferences are highlighted in the output below. Choose all the defaults, **except select "Yes" on the 4th question about the `src/` folder**. Let the tool do its thing. You'll see some output like this:
+
+```bash
+Need to install the following packages:
+  create-next-app@13.1.2
+Ok to proceed? (y) y
+✔ What is your project named? … my-app
+✔ Would you like to use TypeScript with this project? … No / _Yes_
+✔ Would you like to use ESLint with this project? … No / _Yes_
+✔ Would you like to use `src/` directory with this project? … No / _Yes_
+✔ Would you like to use experimental `app/` directory with this project? … _No_ / Yes
+Creating a new Next.js app in /Users/lukebelliveau/ROBOT/my-app.
+# ...
+Success! Created my-app at /Users/lukebelliveau/ROBOT/my-app
+```
+<p className="italic text-xs">The step about the `/app` directory is related to [experimental features in Next.js 13.](https://beta.nextjs.org/docs/routing/fundamentals#the-app-directory)</p>
+
+<Spacer />
+
+Next, navigate to the project folder and start up the dev server:
+
+`~/ROBOT $ cd my-app`
+
+`~/ROBOT/my-app $ npm run dev`
+
+<Spacer />
+
+If you see the Next.js intro page, you're good to go! If not, <a href="mailto:hi@lukebelliveau.dev">shoot me a message</a> and I'll take a look.
+
+
+<img src="/images/blog/nextjs-welcome.png" alt="Next.js Welcome page" style={{ width: '75%' }} />
+
+## Page files
+
+### Adding a new page
+
+Let's add some new pages to share some information about ourselves. Create a new folder named `favorite-colors/` in the `pages/` directory, and add a new file named `index.tsx` inside that folder.
+
+`~/ROBOT/my-app $ mkdir ./src/pages/favorite-colors`
+`~/ROBOT/my-app $ touch ./src/pages/favorite-colors/index.tsx`
+
+<Spacer />
+
+Delete the `src/styles/globals.css` file, we don't need it anymore. Remove its import from `src/pages/_app.tsx`:
+
+```tsx
+import '@/styles/globals.css' // delete me
+import type { AppProps } from 'next/app'
+
+export default function App({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />
+}
+```
+
+<Spacer />
+
+At this point, your `src/` folder will look something like this:
+
+<pre>
+src
+├─ <b>pages</b>
+│  ├─ _app.tsx
+│  ├─ _document.tsx
+│  ├─ index.tsx
+│  ├─ api
+│  │  └─ hello.ts
+│  <b>└─ favorite-colors</b>
+│     <b>└─ index.tsx</b>
+└─ styles
+   ├─ Home.module.css
+   └─ globals.css
+</pre>
+
+<Spacer />
+Let's add some important information to the page:
+
+```tsx
+// src/pages/favorite-colors/index.tsx
+
+import Head from "next/head";
+import Link from "next/link";
+
+const MyFavoriteColors = () => (
+  <>
+    <Head>
+      <title>My Favorite Colors</title>
+      <meta
+        name="description"
+        content="These are some of my favorite colors!"
+      />
+    </Head>
+    <Link href="https://www.britannica.com/science/color">
+      What are colors?
+    </Link>
+    <p>My favorite colors are:</p>
+    <ul>
+      <li>Pink</li>
+      <li>+</li>
+      <li>White</li>
+    </ul>
+  </>
+);
+
+export default MyFavoriteColors;
+```
+
+<img src="/images/blog/pink_white.png" alt="Favorite colors screenshot" style={{ width: '30%', marginBottom: '0px' }} />
+<p className="italic text-xs">impressive, no?</p>
+
+<Spacer />
+
+We've introduced a few new concepts here:
+
+#### A new [index route](https://nextjs.org/docs/routing/introduction#index-routes)
+Creating a file at `pages/favorite-colors/index.tsx` tells Next.js to create a new page for this route. Go to `localhost:3000/favorite-colors`, and you'll see your beautiful new page. Note that you are viewing the component that is **default exported** from the index file.
+
+#### [`<Head>`](https://nextjs.org/docs/api-reference/next/head)
+Append elements to the `<head>` of the page, anywhere. Useful for stuff like page titles, descriptions, and much more.
+
+#### [`<Link>`](https://nextjs.org/docs/api-reference/next/link)
+Handles client-side link transitions. You should always use this component for links in Next.js apps, unless you have a good reason not to (they probably exist, but I can't think of any right now).
+
+### Editing the home page
+
+Let's go back to the `pages/index.tsx` file. Open it up, and you'll see that it contains the code for our default Next.js homepage.
+
+<Spacer />
+**The component that is default exported from this file will be rendered as the home page**. That's because `pages/index.tsx` is the index file in the root of the `pages/` folder.
