@@ -197,8 +197,9 @@ const Testimonials = () => {
             &quot;When I set out to make ZUUT, I didn&apos;t know where to
             start. Luke was the perfect technical partner to help me figure out
             the product&apos;s direction, hire a team of designers and
-            engineers, and get an MVP built - frequently contributing useful
-            feature ideas of his own.{' '}
+            engineers, and get a prototype built - frequently contributing
+            useful feature ideas of his own. He stayed on as the sole developer
+            to turn that prototype into a live product.{' '}
             <span className="font-bold">
               Luke got our app built with a high standard of quality and
               attention to detail.
