@@ -101,7 +101,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Luke Belliveau - professional software delivery</title>
+        <title>Luke Belliveau - Professional Software Delivery</title>
         <meta
           name="description"
           content="Luke Belliveau is a software delivery consultant specializing in full stack web applications and services.  If you need to get something built, I can get it done."
