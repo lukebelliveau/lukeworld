@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Luke Belliveau - professional software delivery</title>
+        <title>Luke Belliveau - Professional Software Delivery</title>
         <meta
           name="description"
           content="I'm Luke Belliveau, a software delivery specialist splitting time between Boston and Hungary. I am a full stack developer with 7 years of experience taking software products from inception to launch and beyond. If you need to get something built, I can get it done."
