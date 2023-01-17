@@ -192,6 +192,24 @@ const Testimonials = () => {
         Words from collaborators
       </h2>
       <div className="lg-h-6 m-0 mt-3 flex flex-col text-sm dark:text-zinc-100 lg:flex-row">
+        <div className="m-2 my-4 flex flex-1 flex-col justify-between rounded-2xl bg-zinc-50 p-4 shadow-md dark:bg-zinc-800/50 lg:my-2">
+          <p className="italic text-zinc-600 dark:text-zinc-200">
+            &quot;Luke was prompt and diligent with ideating and executing the
+            ideas we had to help bring our vision to life. He expertly navigated
+            the complexities of porting our iPhone app to Android, resulting in
+            a seamless and polished final product.{' '}
+            <span className="font-bold">
+              We were able to communicate and engage with a demographic of our
+              fanbase that we didn&apos;t think would have been possible without
+              his work and expertise.
+            </span>{' '}
+            Luke&apos;s contributions were invaluable in expanding our reach,
+            and if given the chance, I would work with him again!&quot;{' '}
+          </p>
+          <span className="mt-6 font-bold">
+            Henock &quot;HK&quot; Sileshi, Creative Direction, BROCKHAMPTON
+          </span>
+        </div>
         <div className="m-2 flex flex-1 flex-col justify-between rounded-2xl bg-zinc-50 p-4 shadow-md dark:bg-zinc-800/50">
           <p className="italic text-zinc-600 dark:text-zinc-200">
             &quot;When I set out to make ZUUT, I didn&apos;t know where to
