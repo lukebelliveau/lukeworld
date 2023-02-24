@@ -41,10 +41,10 @@ function ArrowDownIcon(props) {
 export function Resume({ className }: { className?: string }) {
   let resume = [
     {
-      company: 'NuWave Tech',
-      title: 'Consultant Software Engineer',
-      logo: '/images/logos/nuwave.jpg',
-      start: '2021',
+      company: 'Navalia',
+      title: 'Principal Software Engineer',
+      logo: '/images/logos/navalia.png',
+      start: '2023',
       end: 'Present',
     },
     {
@@ -53,6 +53,13 @@ export function Resume({ className }: { className?: string }) {
       logo: '/images/logos/zuut.jpg',
       start: '2020',
       end: 'Present',
+    },
+    {
+      company: 'NuWave Tech',
+      title: 'Consultant Software Engineer',
+      logo: '/images/logos/nuwave.jpg',
+      start: '2021',
+      end: '2023',
     },
     {
       company: 'Grubhub',
