@@ -42,7 +42,7 @@ export function Resume({ className }: { className?: string }) {
   let resume = [
     {
       company: 'Navalia',
-      title: 'Principal Software Engineer',
+      title: 'Consultant Software Engineer',
       logo: '/images/logos/navalia.png',
       start: '2023',
       end: 'Present',
